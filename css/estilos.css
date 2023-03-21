@@ -1,0 +1,379 @@
+/* INICIO Elementos COMUNES */
+
+* {
+  /* Eliminamos padding y margen por defecto*/
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Optimizado para ancho de 1920px*/
+  width: 1920px;
+  /* Podríamos asignar valor fijo y mejoraría comportamiento en pantallas de menor definición*/
+  font-family: "Teko", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  width: 100%;
+}
+/* */
+/* titulos globales*/
+.titulo-seccion-claro {
+  width: 100%;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #242629;
+  margin: 0;
+  padding-top: 100px;
+}
+.titulo-seccion-oscuro {
+  width: 100%;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #16161a;
+  margin: 0;
+  padding-top: 100px;
+}
+/* FIN Elementos COMUNES */
+
+/* INICIO propiedades Elementos --> CABECERA */
+#cabecera {
+  width: 100%;
+  height: 700px;
+  background-color: #4d413d;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/media/imagenes/header/Hero.jpg");
+  background-position: center;
+}
+
+header {
+  width: 100%;
+}
+
+/* menu inicio */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #4d413d;
+  z-index: 1;
+}
+
+.lista-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+  color: #ffffff;
+  font-size: 36px;
+}
+/*Eliminamos estilo por defecto de los enlaces del menu */
+.lista-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* propiedades de Image Hero*/
+.container-logo {
+  width: 100%;
+  height: 625px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 150px;
+  width: 475px;
+  height: 240px;
+}
+.lema {
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 72px;
+}
+/* FIN propiedades Elementos --> CABECERA */
+
+/* INICIO propiedades Elementos --> Sección CONÓCENOS */
+.container-conocenos {
+  min-width: 100%;
+  min-height: 550px;
+  background-color: #242629;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-descripcion {
+  width: 480px;
+  height: 400px;
+  background-color: black;
+}
+.container-descripcion p {
+  margin: 45px;
+  color: #94a1b2;
+  font-size: 32px;
+}
+
+.container-video {
+  width: 600px;
+  height: 400px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+/* FIN propiedades Elementos --> Sección CONÓCENOS */
+
+/* INICIO propiedades Elementos --> Sección INSTALACIONES */
+.container-instalaciones {
+  width: 100%;
+  height: 980px;
+  background-color: #16161a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-galeria {
+  width: 1500px;
+  height: 650px;
+  background: #242629;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 75px 25px 75px 25px;
+}
+
+.galeria {
+  width: 20%;
+  min-width: 304px;
+  min-height: 174px;
+  border: 8px solid #16161a;
+  border-radius: 2px;
+  color: #ffffff;
+  /* centrado de letras imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+/* FIN propiedades Elementos --> Sección INSTALACIONES */
+
+/* INICIO propiedades Elementos --> Sección ACTIVIDADES */
+.container-actividades {
+  width: 100%;
+  height: 1180px;
+  background-color: #242629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-galeria-actividades {
+  width: 1500px;
+  height: 950px;
+  background: #16161a;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 25px 75px 25px;
+}
+
+.pestanas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pestanas p {
+  text-align: center;
+  width: 30%;
+  min-width: 370px;
+  min-height: 85px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #ffffff;
+  font-size: 60px;
+  background-color: #16161a;
+  border-bottom: solid 2px;
+}
+/*
+.pestanas p:hover{
+color:#7F5AF0;
+border-bottom: solid 2px #7F5AF0;
+}
+*/
+
+.actividades {
+  margin-top: 25px;
+  width: 35%;
+  min-width: 370px;
+  max-width: 370px;
+  max-height: 230px;
+  min-height: 230px;
+  border: 8px solid #242629;
+  border-radius: 2px;
+  background-color: #242629;
+  /* centrado de letras imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #94a1b2;
+}
+
+/*
+.actividades:hover{
+  border: 8px solid #7F5AF0;
+  color: white;
+}
+*/
+/* FIN propiedades Elementos --> Sección ACTIVIDADES */
+
+/* INICIO propiedades Elementos --> Sección ACTÍVATE */
+.container-activate {
+  width: 100%;
+  height: 950px;
+  background-color: #16161a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo-activate {
+  width: 1525px;
+  height: 800px;
+  background-color: #242629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* imagen localizacion*/
+.localizacion {
+  width: 50%;
+  height: 400px;
+  margin: 75px;
+  background-color: #16161a;
+  border-bottom: solid 8px #7f5af0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-mapa p {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+/* Formulario */
+.container-formulario {
+  width: 50%;
+  height: 500px;
+  margin: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario {
+  width: 80%;
+  min-width: 605px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+label {
+  color: #94a1b2;
+  font-size: 32px;
+}
+
+input {
+  width: 100%;
+  min-width: 590px;
+  padding: 10px;
+  padding-right: 0px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  border: #242629;
+  border-bottom: solid 8px #7f5af0;
+  background-color: #40454b;
+  border-radius: 2px;
+  font-family: "Teko", sans-serif;
+  color: #ffffff;
+}
+
+button {
+  width: 150px;
+  height: 45px;
+  background-color: #7f5af0;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  align-self: flex-end;
+  padding: 5px;
+}
+
+.datos-contacto {
+  width: 50%;
+  color: #94a1b2;
+  font-family: "Teko", sans-serif;
+  font-size: 42px;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.material-symbols-outlined {
+  font-size: 48px;
+  color: #7f5af0;
+  margin-right: 10px;
+}
+/* FIN propiedades Elementos --> Sección ACTÍVATE */
+
+/* INICIO propiedades Elementos --> PIE-PAGINA */
+#pie-pagina {
+  width: 100%;
+  height: 150px;
+  background-color: #242629;
+  border-top: solid 2px #7f5af0;
+}
+
+.container-pie-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rrss {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  margin: 50px 35px 50px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* FIN propiedades Elementos --> PIE-PAGINA */
