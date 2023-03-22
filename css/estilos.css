@@ -160,8 +160,8 @@ nav {
 
 .galeria {
   width: 20%;
-  min-width: 304px;
-  min-height: 174px;
+  width: 304px;
+  height: 174px;
   border: 8px solid #16161a;
   border-radius: 2px;
   color: #ffffff;
