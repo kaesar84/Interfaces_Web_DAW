@@ -74,12 +74,23 @@ nav {
   list-style: none;
   color: #ffffff;
   font-size: 36px;
+  
 }
 /*Eliminamos estilo por defecto de los enlaces del menu */
 .lista-menu a {
+  transition-property: color;
+  transition-duration: 0.2s;
   color: #ffffff;
   text-decoration: none;
 }
+
+.lista-menu a:hover {
+  color:#7F5AF0;
+ 
+}
+
+
+
 
 /* propiedades de Image Hero*/
 .container-logo {
@@ -214,9 +225,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.pestanas p {
+.pestanas a {
   text-align: center;
   width: 30%;
   min-width: 370px;
@@ -229,12 +241,17 @@ nav {
   font-size: 60px;
   background-color: #16161a;
   border-bottom: solid 2px;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.2s;
 }
 
-.pestanas p:hover{
-color:#7F5AF0;
-border-bottom: solid 2px #7F5AF0;
+.pestanas a:hover{
+  color: #7F5AF0;
+  font-size: 60px;
+  text-decoration: none;
 }
+
 
 
 
@@ -428,6 +445,8 @@ border-radius: 120px;
   width: 100%;
   height: auto;
   fill: white;
+  transition-property: fill;
+  transition-duration: 0.2s;
 }
 .rrss_icon:hover{
   fill: #7F5AF0;
