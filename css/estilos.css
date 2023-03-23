@@ -272,14 +272,16 @@ nav {
   align-items: center;
   color: #94a1b2;
   overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.2s;
+  
 }
 
 .actividades:hover{
   color: #ffffff;
   border-color: #7F5AF0;
-  opacity: 90%;
+  opacity: 100%;
 }
-
 
 
 .actividades img{
@@ -287,11 +289,12 @@ nav {
   height: auto;
   min-height: 250px;
   opacity: 20%;
-
+  transition-property: all;
+  transition-duration: 0.2s;
 }
 
 .actividades img:hover{
-  opacity: 90%;
+  opacity: 80%;
   }
 
 
@@ -336,6 +339,20 @@ nav {
   overflow: hidden;
   border-radius: 5px;
 }
+
+.localizacion img{
+  transition: transform 1.5s;
+
+}
+
+.localizacion img:hover{
+transform: scale(1.6);
+ 
+}
+.localizacion img:not(:hover){
+  transform: scale(1);
+    transition-delay: 0.2s;
+  }
 
 
 
@@ -430,16 +447,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*
-  border:solid 2px #242629;*/
-}
-/*
-.rrss:hover {
-border:solid 2px #7F5AF0;
-border-radius: 120px;
-
   
-}*/
+}
+
 
 .rrss_icon{
   width: 100%;
