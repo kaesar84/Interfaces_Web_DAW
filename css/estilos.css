@@ -101,12 +101,66 @@ nav {
   margin-top: 150px;
   width: 475px;
   height: 240px;
+  animation-name: opLogo;
+  animation-duration: 4s;
+  animation-iteration-count: initial;
 }
+
+@keyframes opLogo {
+  0% {
+    transform: translateY(-400%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-150%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+  }
+
+  70% {
+    transform: translateY(0%);
+  }
+
+  80% {
+    transform: translateY(-50%);
+  }
+}
+
 .lema {
   margin-top: 50px;
   color: #ffffff;
   font-size: 72px;
+  animation-name: opLema;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-delay: 5s;
+  opacity: 100%;
 }
+
+@keyframes opLema {
+  0% { transform: scale(1);}
+  25% { transform: scale(1.1);}
+  50% { transform: scale(1);}
+  50% { transform: scale(1.1);}
+  100%{ transform: scale(1);}
+  
+}
+
+/*
+@keyframes opLema{
+  0% {opacity: 0%;}
+  100%{ opacity: 100%;}
+}
+*/
+
 /* FIN propiedades Elementos --> CABECERA */
 
 /* INICIO propiedades Elementos --> Sección CONÓCENOS */
@@ -118,7 +172,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .container-descripcion {
   width: 480px;
@@ -134,12 +188,17 @@ nav {
 .container-video {
   width: 600px;
   height: 400px;
-  background-color: grey;
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 }
+
+
+
+
+
 /* FIN propiedades Elementos --> Sección CONÓCENOS */
 
 /* INICIO propiedades Elementos --> Sección INSTALACIONES */
@@ -254,7 +313,7 @@ nav {
   color: #94a1b2;
   overflow: hidden;
   transition-property: all;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
 }
 
 .actividades:hover {
@@ -324,7 +383,6 @@ nav {
 .localizacion img:hover {
   transform: scale(1.5);
 }
-
 
 /* Formulario */
 .container-formulario {
@@ -434,7 +492,6 @@ button:hover {
   transition: transform 0.5s;
 }
 .rrss_icon:hover {
-  
   fill: #7f5af0;
   transform: scale(1.3);
 }
