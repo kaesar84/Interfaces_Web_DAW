@@ -181,10 +181,10 @@ nav {
   color: #ffffff;
   font-size: 72px;
   animation-name: opLema;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-iteration-count:calc(+3);
   animation-delay: 5s;
-  opacity: 100%;
+  
 }
 
 @keyframes opLema {
