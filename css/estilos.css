@@ -378,7 +378,7 @@ nav {
   transition-duration: 0.2s;
 }
 
-.actividades img:hover {
+.actividades:hover img {
   opacity: 80%;
 }
 
