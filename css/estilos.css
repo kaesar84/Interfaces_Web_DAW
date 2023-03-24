@@ -74,17 +74,59 @@ nav {
   list-style: none;
   color: #ffffff;
   font-size: 36px;
+
 }
 /*Eliminamos estilo por defecto de los enlaces del menu */
 .lista-menu a {
+  display: block;
+  text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
   color: #ffffff;
+}
+
+.lista-submenu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 15px;
+  padding-top: 10px;
+  
+  
+  
+  margin: 0;
+  background-color: #4d413d;
+  border-radius: 0px 0px 5px 5px;
+  display: none;
+}
+
+.lista-submenu li {
+  display: block;
+}
+
+.lista-submenu a {
+  display: block;
   text-decoration: none;
+}
+
+.lista-menu li {
+  position: relative;
+}
+
+.lista-menu li:hover > .lista-submenu {
+  display: block;
 }
 
 .lista-menu a:hover {
   color: #7f5af0;
+}
+
+.lista-submenu {
+  transition-property: color;
+  transition-duration: 0.2s;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* propiedades de Image Hero*/
@@ -140,18 +182,27 @@ nav {
   font-size: 72px;
   animation-name: opLema;
   animation-duration: 5s;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
   animation-delay: 5s;
   opacity: 100%;
 }
 
 @keyframes opLema {
-  0% { transform: scale(1);}
-  25% { transform: scale(1.1);}
-  50% { transform: scale(1);}
-  50% { transform: scale(1.1);}
-  100%{ transform: scale(1);}
-  
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*
@@ -172,7 +223,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .container-descripcion {
   width: 480px;
@@ -188,16 +239,12 @@ nav {
 .container-video {
   width: 600px;
   height: 400px;
-  background-color:black;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 }
-
-
-
-
 
 /* FIN propiedades Elementos --> Sección CONÓCENOS */
 
@@ -337,7 +384,7 @@ nav {
 
 .actividades p {
   position: absolute;
-  z-index: 1; /* coloca el párrafo encima de la imagen */
+  z-index: 0; /* coloca el párrafo encima de la imagen */
   font-size: 60px;
 }
 
