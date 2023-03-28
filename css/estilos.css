@@ -524,14 +524,15 @@ input {
 }
 #modalBoxF{
   width:25%;
-  height: 20%;
-  background-color: white;
+  height: 25%;
+  background-color: #242629;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-self: center;
   border-radius: 25px;
+  color: #ffffff;
   
 }
 #botonfmodal{
@@ -548,6 +549,16 @@ input {
   transition-duration: 0.2s;
   margin-top: 25px;
 }
+#botonfmodal:hover{
+  background-color: #40454b;
+  border: solid 1px #7f5af0;
+  transform: scale(1.1);
+}
+
+
+
+
+
 
 #mensajeFormulario{
   font-size: 32px;

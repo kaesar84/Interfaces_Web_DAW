@@ -1,4 +1,3 @@
-
 /* INICIO Formulario */
 
 /*Realiza la función de mostrar el modal, así como bloquear el scroll. 
@@ -30,11 +29,14 @@ contactarAbrir = () => {
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else {
       mensaje =
-        "Hola " + nombre + "<br>Contactaremos en tu teléfono " + telefono;
+        "Hola " +
+        nombre +
+        "<br>Contactaremos en tu teléfono " +
+        telefono +
+        "<br>Gracias por tu confianza";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     }
   })();
-
 };
 
 /*Realiza la función de ocultar el modal, desbloquea el scroll. 
