@@ -64,12 +64,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 55px;
   padding: 10px;
   background-color: #4d413d;
   z-index: 5;
   transition: top 1s;
   width: 100%;
-  
+  backdrop-filter: blur(21px) saturate(0%);
+  -webkit-backdrop-filter: blur(21px) saturate(0%);
+  background-color: rgba(36, 38, 41, 0.9);
 }
 
 .lista-menu {
@@ -92,14 +95,23 @@ header {
 
 .lista-submenu {
   position: absolute;
-  top: 100%;
+  top: 65px;
   width: 100%;
   padding: 15px;
-  padding-top: 10px;
+  padding-top: 0px;
   margin: 0;
   background-color: #4d413d;
   border-radius: 0px 0px 5px 5px;
   display: none;
+  backdrop-filter: blur(21px) saturate(0%);
+  -webkit-backdrop-filter: blur(21px) saturate(0%);
+  background-color: rgba(36, 38, 41, 0.9);
+  z-index: 5;
+  transition-property: all;
+  transition-duration: 0.2s;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
 }
 
 .lista-submenu li {
@@ -117,19 +129,14 @@ header {
 
 .lista-menu li:hover > .lista-submenu {
   display: block;
+
 }
 
 .lista-menu a:hover {
   color: #7f5af0;
 }
 
-.lista-submenu {
-  transition-property: color;
-  transition-duration: 0.2s;
-  color: #ffffff;
-  text-decoration: none;
-  list-style: none;
-}
+
 
 /* propiedades de Image Hero*/
 .container-logo {
