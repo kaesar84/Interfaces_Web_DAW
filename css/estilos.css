@@ -55,7 +55,6 @@ section {
 
 header {
   width: 100%;
-
 }
 
 /* menu inicio */
@@ -64,18 +63,14 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 55px;
-  padding: 10px;
-  background-color: #4d413d;
-  z-index: 5;
+  z-index: 100;
   transition: top 1s;
   width: 100%;
-  backdrop-filter: blur(21px) saturate(0%);
-  -webkit-backdrop-filter: blur(21px) saturate(0%);
-  background-color: rgba(36, 38, 41, 0.9);
+  height: 65px;
 }
 
 .lista-menu {
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,6 +78,9 @@ header {
   list-style: none;
   color: #ffffff;
   font-size: 36px;
+  background-color: rgba(36, 38, 41, 0.9);
+  transition-delay: all 1s;
+  padding-top: 15px;
 }
 /*Eliminamos estilo por defecto de los enlaces del menu */
 .lista-menu a {
@@ -91,27 +89,29 @@ header {
   transition-property: color;
   transition-duration: 0.2s;
   color: #ffffff;
+  height: 100%;
 }
 
 .lista-submenu {
   position: absolute;
   top: 65px;
   width: 100%;
-  padding: 15px;
+  height: auto;
+  margin-top: 0px;
+  padding: 10px;
   padding-top: 0px;
-  margin: 0;
   background-color: #4d413d;
-  border-radius: 0px 0px 5px 5px;
+  overflow-y: hidden;
   display: none;
-  backdrop-filter: blur(21px) saturate(0%);
-  -webkit-backdrop-filter: blur(21px) saturate(0%);
+  border-radius: 0px 0px 2px 2px;
+
   background-color: rgba(36, 38, 41, 0.9);
-  z-index: 5;
-  transition-property: all;
-  transition-duration: 0.2s;
+  z-index: 4;
   color: #ffffff;
   text-decoration: none;
   list-style: none;
+  transition: all 1s;
+  overflow-y: hidden;
 }
 
 .lista-submenu li {
@@ -127,16 +127,13 @@ header {
   position: relative;
 }
 
-.lista-menu li:hover > .lista-submenu {
+.lista-menu > li:hover > .lista-submenu {
   display: block;
-
 }
 
 .lista-menu a:hover {
   color: #7f5af0;
 }
-
-
 
 /* propiedades de Image Hero*/
 .container-logo {
@@ -156,7 +153,6 @@ header {
   animation-duration: 3s;
   animation-iteration-count: initial;
   z-index: 2;
-  
 }
 
 /* ----------------------------------------------
@@ -171,41 +167,38 @@ header {
  * animation puff-in-center
  * ----------------------------------------
  */
- @-webkit-keyframes puff-in-center {
+@-webkit-keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
-
-
-
 
 @keyframes opLogo {
   0% {
@@ -242,9 +235,6 @@ header {
   animation-name: tracking-in-contract-bck-top;
   animation-duration: 3s;
   animation-iteration-count: initial;
-  
-  
-  
 }
 
 /* ----------------------------------------------
@@ -259,11 +249,11 @@ header {
  * animation tracking-in-contract-bck-top
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-contract-bck-top {
+@-webkit-keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(400px) translateY(-300px);
-            transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
   40% {
@@ -271,7 +261,7 @@ header {
   }
   100% {
     -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
     opacity: 1;
   }
 }
@@ -279,7 +269,7 @@ header {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(400px) translateY(-300px);
-            transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
   40% {
@@ -287,12 +277,10 @@ header {
   }
   100% {
     -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
     opacity: 1;
   }
 }
-
-
 
 @keyframes opLema {
   0% {
