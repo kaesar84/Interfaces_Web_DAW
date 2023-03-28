@@ -1,4 +1,3 @@
-
 /* MENU INICIO */
 
 /*Oculta el menu en base del scroll */
@@ -6,36 +5,24 @@
 var posInicioScroll = document.documentElement.scrollTop;
 var posFinalScroll = document.documentElement.scrollTop;
 
+window.onscroll = function () {
+  estadoMenu();
+};
 
-window.onscroll = function() {estadoMenu()};
- 
-function estadoMenu(){
+function estadoMenu() {
   var posActualScroll = document.documentElement.scrollTop;
 
-  if(posInicioScroll>posActualScroll){
+  if (posInicioScroll > posActualScroll) {
     // subiendo pantalla - muestra menu
     //document.getElementById("menu").style.display="flex";
-    document.getElementById("menuBar").style.top= "0";
-  
-
-  }else{
+    document.getElementById("menuBar").style.top = "0";
+  } else {
     //bajando - oculta menu
-   // document.getElementById("menu").style.display="none";
-   document.getElementById("menuBar").style.top= "-200px";
+    // document.getElementById("menu").style.display="none";
+    document.getElementById("menuBar").style.top = "-200px";
   }
-  posInicioScroll=posActualScroll;
-
+  posInicioScroll = posActualScroll;
 }
-
-    
-
-  
-
-  
-
-
-
-
 
 /* INICIO Formulario */
 
@@ -67,6 +54,9 @@ contactarAbrir = () => {
       mensaje = "Introduce e-mail correcto";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else {
+      document.getElementById("modalBoxF").style.width = "30%";
+      document.getElementById("modalBoxF").style.height = "30%";
+
       mensaje =
         "Hola " +
         nombre +
