@@ -433,7 +433,7 @@ nav {
 }
 
 /* Formulario */
-.container-formulario {
+#container-formulario {
   width: 50%;
   height: 500px;
   margin: 75px;
@@ -472,7 +472,7 @@ input {
   color: #ffffff;
 }
 
-button {
+#botonFormulario {
   width: 150px;
   height: 45px;
   background-color: #7f5af0;
@@ -487,7 +487,7 @@ button {
   transition-duration: 0.2s;
 }
 
-button:hover {
+#botonFormulario:hover {
   background-color: #40454b;
   border: solid 1px #7f5af0;
   transform: scale(1.1);
@@ -507,6 +507,63 @@ button:hover {
   color: #7f5af0;
   margin-right: 10px;
 }
+/* modal */
+#modalFormulario{
+  width:100vw;
+  height:100vh;
+  /*background-color: #242629;*/
+  position: fixed;
+  display: none;
+  z-index: 5;
+  flex-direction: center;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(4, 8, 15, 0.8);
+  top:0;
+ 
+}
+#modalBoxF{
+  width:25%;
+  height: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 25px;
+  
+}
+#botonfmodal{
+  width: 150px;
+  height: 45px;
+  background-color: #7f5af0;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  padding: 5px;
+  transition: all;
+  transition-duration: 0.2s;
+  margin-top: 25px;
+}
+
+#mensajeFormulario{
+  font-size: 32px;
+  text-align: center;
+  
+}
+
+
+/* modal*/
+
+
+
+
+
+
+
 /* FIN propiedades Elementos --> Sección ACTÍVATE */
 
 /* INICIO propiedades Elementos --> PIE-PAGINA */
