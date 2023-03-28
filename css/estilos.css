@@ -55,16 +55,21 @@ section {
 
 header {
   width: 100%;
+
 }
 
 /* menu inicio */
-nav {
+
+#menuBar {
   position: fixed;
   top: 0;
   width: 100%;
   padding: 10px;
   background-color: #4d413d;
-  z-index: 1;
+  z-index: 5;
+  transition: top 1s;
+  width: 100%;
+  
 }
 
 .lista-menu {
@@ -75,7 +80,6 @@ nav {
   list-style: none;
   color: #ffffff;
   font-size: 36px;
-
 }
 /*Eliminamos estilo por defecto de los enlaces del menu */
 .lista-menu a {
@@ -92,9 +96,6 @@ nav {
   width: 100%;
   padding: 15px;
   padding-top: 10px;
-  
-  
-  
   margin: 0;
   background-color: #4d413d;
   border-radius: 0px 0px 5px 5px;
@@ -507,10 +508,11 @@ input {
   color: #7f5af0;
   margin-right: 10px;
 }
+
 /* modal */
-#modalFormulario{
-  width:100vw;
-  height:100vh;
+#modalFormulario {
+  width: 100vw;
+  height: 100vh;
   /*background-color: #242629;*/
   position: fixed;
   display: none;
@@ -519,11 +521,10 @@ input {
   align-content: center;
   justify-content: center;
   background-color: rgba(4, 8, 15, 0.8);
-  top:0;
- 
+  top: 0;
 }
-#modalBoxF{
-  width:25%;
+#modalBoxF {
+  width: 25%;
   height: 25%;
   background-color: #242629;
   display: flex;
@@ -531,11 +532,12 @@ input {
   align-items: center;
   justify-content: center;
   align-self: center;
-  border-radius: 25px;
+  border-radius: 20px;
   color: #ffffff;
-  
+  /*border: solid 1px #7f5af0;*/
 }
-#botonfmodal{
+
+#botonfmodal {
   width: 150px;
   height: 45px;
   background-color: #7f5af0;
@@ -549,31 +551,18 @@ input {
   transition-duration: 0.2s;
   margin-top: 25px;
 }
-#botonfmodal:hover{
+
+#botonfmodal:hover {
   background-color: #40454b;
   border: solid 1px #7f5af0;
   transform: scale(1.1);
 }
 
-
-
-
-
-
-#mensajeFormulario{
+#mensajeFormulario {
   font-size: 32px;
-  text-align: center;
-  
 }
 
-
 /* modal*/
-
-
-
-
-
-
 
 /* FIN propiedades Elementos --> Sección ACTÍVATE */
 
