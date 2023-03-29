@@ -105,46 +105,46 @@
       <div class="container-galeria" data-aos="zoom-out" data-aos-duration="1000">
 
 
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
-            src="/media/imagenes/instalaciones/Instalaciones1.jpg" alt=""> </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+          src="/media/imagenes/instalaciones/Instalaciones1.jpg" alt=""> </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones2.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones3.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones4.jpg" alt=""></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones5.jpg" alt=""></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones6.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones7.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones8.jpg" alt=""></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones9.jpg" alt=""></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones10.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones11.jpg" alt=""></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img
+        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
             src="/media/imagenes/instalaciones/Instalaciones12.jpg" alt=""></div>
       </div>
 
       <div id="modalLightBox">
 
-        <button class="botonLB"><span class="material-symbols-outlined">
+        <button class="botonLB" onclick="retroImg()"><span class="material-symbols-outlined">
           arrow_back_ios
           </span></button>
         
         <div id="imagenMostradaContainer">
-
-          <div class="imagenMostrada">
-            <img src="/media/imagenes/instalaciones/Instalaciones1.jpg" alt="">
+          <div id="imagenMostrada">
+            
           </div>
          
         </div>
-        <button class="botonLB"><span class="material-symbols-outlined">
+        <button class="botonLB" onclick="nextImg()"><span class="material-symbols-outlined">
           arrow_forward_ios
           </span></button>
         
@@ -322,7 +322,14 @@
 
   <script>
     AOS.init();
+   
   </script>
+ 
+  <script>
+    comeToLight();
+  </script>
+
+
 
 
 </body>

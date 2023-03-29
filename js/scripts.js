@@ -24,6 +24,78 @@ function estadoMenu() {
   posInicioScroll = posActualScroll;
 }
 
+/* LIGHT */
+
+var listaRutaImgGal = [];
+var numeroImg = 0;
+
+comeToLight = () => {
+  var listaImgGal = document.getElementsByClassName("img_gal");
+
+  for (var i = 0; i < listaImgGal.length; i++) {
+    listaRutaImgGal.push(listaImgGal[i].src);
+  }
+
+  for (var i = 0; i < listaImgGal.length; i++) {
+    listaImgGal[i].addEventListener("click", openLight);
+  }
+
+  function openLight() {
+    var rutaImgClik = event.currentTarget.src;
+    //console.log(rutaImgClik);
+
+    var numeroImg = listaRutaImgGal.indexOf(rutaImgClik);
+    //console.log(numeroImg)
+
+    document.getElementById("imagenMostrada").innerHTML =
+      "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
+
+    document.getElementById("modalLightBox").style.display = "flex";
+    document.documentElement.style.overflow = "hidden";
+    closeLight();
+  }
+
+  function closeLight() {
+    window.addEventListener("click", function (event) {
+      // Localizamos la ubicación del clic - matches
+      // cuando no sean las clases determinadas se cerrará
+      if (
+        !event.target.matches(".imgLight") &&
+        !event.target.matches(".img_gal") &&
+        !event.target.matches("#imagenMostrada") &&
+        !event.target.matches(".botonLB") &&
+        !event.target.matches(".material-symbols-outlined")
+      ) {
+       
+        document.getElementById("modalLightBox").style.display = "none";
+        document.documentElement.style.overflow = "auto";
+      }
+    });
+  }
+};
+
+nextImg = () => {
+  numeroImg++;
+
+  if (numeroImg == listaRutaImgGal.length) {
+    numeroImg = 0;
+  }
+
+  document.getElementById("imagenMostrada").innerHTML =
+    "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
+};
+
+retroImg = () => {
+  numeroImg--;
+
+  if (numeroImg < 0) {
+    numeroImg = listaRutaImgGal.length - 1;
+  }
+
+  document.getElementById("imagenMostrada").innerHTML =
+    "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
+};
+
 /* INICIO Formulario */
 
 /*Realiza la función de mostrar el modal, así como bloquear el scroll. 
