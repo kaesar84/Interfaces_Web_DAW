@@ -1,6 +1,6 @@
-/* MENU INICIO */
-
-/*Oculta el menu en base del scroll */
+// ********************************************* //
+//MENU INICIO
+//Oculta el menu en base del scroll
 
 var posInicioScroll = document.documentElement.scrollTop;
 var posFinalScroll = document.documentElement.scrollTop;
@@ -23,27 +23,35 @@ function estadoMenu() {
   }
   posInicioScroll = posActualScroll;
 }
+// ********************************************* //
 
-/* LIGHT */
+// ********************************************* //
+// LIGHTBOX
+// muestra imagen ampliada al seleccionarla
 
 var listaRutaImgGal = [];
 var numeroImg = 0;
 
+//Obtendremos la ruta de la imagen seleccionada, para su posterior ampliación
 comeToLight = () => {
+  // Creamos array con los elementos de la clase img_gal
   var listaImgGal = document.getElementsByClassName("img_gal");
 
+  // Recorremos array e rellenamos listaRutaImgGal con los elementos src
   for (var i = 0; i < listaImgGal.length; i++) {
     listaRutaImgGal.push(listaImgGal[i].src);
   }
-
+  // Iniciamos listener recorriendo la listaImgGal -> abrirá la función openLight
   for (var i = 0; i < listaImgGal.length; i++) {
     listaImgGal[i].addEventListener("click", openLight);
   }
 
+  /* Realizará la obertura del modal, incorporará contenido html de la imagen
+ teniendo en cuenta su posición en el array. Bloquea también la barra de scroll
+*/
   function openLight() {
     var rutaImgClik = event.currentTarget.src;
     //console.log(rutaImgClik);
-
     var numeroImg = listaRutaImgGal.indexOf(rutaImgClik);
     //console.log(numeroImg)
 
@@ -55,6 +63,7 @@ comeToLight = () => {
     closeLight();
   }
 
+  //Cerramos el modal, condicionando su cierre al click en una posición determinada
   function closeLight() {
     window.addEventListener("click", function (event) {
       // Localizamos la ubicación del clic - matches
@@ -73,10 +82,12 @@ comeToLight = () => {
   }
 };
 
+// Cambio de ruta de las imágenes a mostrar
+//imagen siguiente
 nextImg = () => {
   numeroImg++;
-
   if (numeroImg == listaRutaImgGal.length) {
+    // aplicamos reinicio al llegar a la última imagen
     numeroImg = 0;
   }
 
@@ -84,18 +95,25 @@ nextImg = () => {
     "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
 };
 
+//imagen anterior
 retroImg = () => {
   numeroImg--;
 
   if (numeroImg < 0) {
+    // aplicamos reinicio a la primera imagen
     numeroImg = listaRutaImgGal.length - 1;
   }
 
   document.getElementById("imagenMostrada").innerHTML =
     "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
 };
+// ********************************************* //
 
-/* INICIO Formulario */
+
+
+
+// ********************************************* //
+/* FORMULARIO*/
 
 /*Realiza la función de mostrar el modal, así como bloquear el scroll. 
 Gestiona el mensaje recibido por el usuario */
@@ -151,18 +169,34 @@ contactarCerrar = () => {
   var telefono = (document.getElementById("formTel").value = "");
   var email = (document.getElementById("formEmail").value = "");
 };
+/// ********************************************* //
 
-/* FIN Formulario */
 
+// ********************************************* //
+// PESTAÑAS
 
-selectPest =(pestMostrar)=>{
-
+selectPest = (pestMostrar, pestClick) => {
+  /*Creamos un array con los elementos de la clase contanier_actividades */
   var listaPest = document.getElementsByClassName("container_actividades");
 
-  for(var i =0 ; i< listaPest.length;i++){
-    listaPest[i].style.display="none";
+  /*Recorremos el array aplicando propiedad para ocultarlos */
+  for (var i = 0; i < listaPest.length; i++) {
+    listaPest[i].style.display = "none";
   }
+  
+  /* pesMostrar -> será un string con el que identificaremos la id del elemento
+  localizado en la lista, será el elemento de la clase container_actividades y con id "X"
+  lo mostraremos*/
 
-  document.getElementById(pestMostrar).style.display="flex";
+  document.getElementById(pestMostrar).style.display = "flex";
 
-}
+  var tabLinks = document.getElementsByClassName("pestanasP");
+
+  for (var i = 0; i < tabLinks.length; i++) {
+    console.log(tabLinks);
+    tabLinks[i].classList.remove("pestanasPActiva");
+  }
+  document.getElementById(pestClick).classList.add("pestanasPActiva");
+};
+
+// ********************************************* //

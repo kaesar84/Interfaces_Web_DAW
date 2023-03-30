@@ -38,9 +38,9 @@
           <li><a href="#instalaciones">INSTALACIONES</a></li>
           <li><a href="#actividades">ACTIVIDADES</a>
             <ul class="lista-submenu">
-              <li><a onclick="selectPest('act_indoor')" href="#pindoor">INDOOR</a></li>
-              <li><a onclick="selectPest('act_outdoor')" href="#poutdoor">OUTDOOR</a></li>
-              <li><a onclick="selectPest('act_aquazone')" href="#paquazone">AQUAZONE</a></li>
+              <li><a onclick="selectPest('act_indoor','pindoor')" href="#pindoor">INDOOR</a></li>
+              <li><a onclick="selectPest('act_outdoor','poutdoor')" href="#poutdoor">OUTDOOR</a></li>
+              <li><a onclick="selectPest('act_aquazone','paquazone')" href="#paquazone">AQUAZONE</a></li>
             </ul>
 
 
@@ -165,15 +165,15 @@
     <!-- Contenido sección actividades -->
     <!-- Menú / pestañas-->
     <div class="container-actividades">
-      <div class="container-galeria-actividades" data-aos="zoom-out" data-aos-duration="1000">
-        <div class="pestanas" id="pindoor">
-          <a onclick="selectPest('act_indoor')" href="#actividades"> INDOOR</a>
+      <div class="container-galeria-actividades" name="link_container" data-aos="zoom-out" data-aos-duration="1000">
+        <div class="pestanas" >
+          <p id="pindoor" class="pestanasP pestanasPActiva" onclick="selectPest('act_indoor','pindoor')"> INDOOR</p>
         </div>
-        <div class="pestanas" id="poutdoor">
-          <a onclick="selectPest('act_outdoor')" href="#actividades"> OUTDOOR</a>
+        <div class="pestanas">
+          <p  id="poutdoor" class="pestanasP pestanasPActiva" onclick="selectPest('act_outdoor','poutdoor')"> OUTDOOR</p>
         </div>
-        <div class="pestanas" id="paquazone">
-          <a onclick="selectPest('act_aquazone')" href="#actividades"> AQUAZONE</a>
+        <div class="pestanas">
+          <p  id="paquazone" class="pestanasP pestanasPActiva" onclick="selectPest('act_aquazone','paquazone')"> AQUAZONE</p>
         </div>
 
         <!-- Galería de imágenes -->

@@ -471,16 +471,17 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 25px 75px 25px;
+  color: white;
 }
 
 .pestanas {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  color: white;
 }
 
-.pestanas a {
+.pestanasP {
   text-align: center;
   width: 30%;
   min-width: 370px;
@@ -489,7 +490,6 @@ header {
   margin-right: 32px;
   margin-bottom: 0px;
   margin-top: 0px;
-  color: #ffffff;
   font-size: 60px;
   background-color: #16161a;
   border-bottom: solid 2px;
@@ -498,13 +498,19 @@ header {
   transition-duration: 0.2s;
 }
 
-.pestanas a:hover {
+.pestanasPActiva {
+  color: #7f5af0;
+}
+
+/*
+
+.pestanasP:hover {
   color: #7f5af0;
   font-size: 60px;
   text-decoration: none;
 }
-
-.container_actividades{
+*/
+.container_actividades {
   width: 100%;
   height: 950px;
   display: flex;
@@ -513,18 +519,16 @@ header {
   flex-wrap: wrap;
 }
 
-
-#act_indoor{
+#act_indoor {
   display: flex;
 }
 
-#act_outdoor{
+#act_outdoor {
   display: none;
 }
-#act_aquazone{
-  display:none;
+#act_aquazone {
+  display: none;
 }
-
 
 .actividades {
   margin-top: 25px;
