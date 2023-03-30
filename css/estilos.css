@@ -470,7 +470,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 0px 25px 75px 25px;
+  padding: 10px 25px 75px 25px;
 }
 
 .pestanas {
@@ -515,15 +515,16 @@ header {
 
 
 #act_indoor{
-  display: none;
+  display: flex;
 }
 
 #act_outdoor{
   display: none;
 }
 #act_aquazone{
-  display: flex;
+  display:none;
 }
+
 
 .actividades {
   margin-top: 25px;

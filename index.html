@@ -38,9 +38,9 @@
           <li><a href="#instalaciones">INSTALACIONES</a></li>
           <li><a href="#actividades">ACTIVIDADES</a>
             <ul class="lista-submenu">
-              <li><a href="#pindoor">INDOOR</a></li>
-              <li><a href="#poutdoor">OUTDOOR</a></li>
-              <li><a href="#paquazone">AQUAZONE</a></li>
+              <li><a onclick="selectPest('act_indoor')" href="#pindoor">INDOOR</a></li>
+              <li><a onclick="selectPest('act_outdoor')" href="#poutdoor">OUTDOOR</a></li>
+              <li><a onclick="selectPest('act_aquazone')" href="#paquazone">AQUAZONE</a></li>
             </ul>
 
 
@@ -167,13 +167,13 @@
     <div class="container-actividades">
       <div class="container-galeria-actividades" data-aos="zoom-out" data-aos-duration="1000">
         <div class="pestanas" id="pindoor">
-          <a href="#actividades"> INDOOR</a>
+          <a onclick="selectPest('act_indoor')" href="#actividades"> INDOOR</a>
         </div>
         <div class="pestanas" id="poutdoor">
-          <a href="#actividades"> OUTDOOR</a>
+          <a onclick="selectPest('act_outdoor')" href="#actividades"> OUTDOOR</a>
         </div>
-        <div class="pestanas" id="paquazon">
-          <a href="#actividades"> AQUAZONE</a>
+        <div class="pestanas" id="paquazone">
+          <a onclick="selectPest('act_aquazone')" href="#actividades"> AQUAZONE</a>
         </div>
 
         <!-- Galería de imágenes -->

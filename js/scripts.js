@@ -153,3 +153,16 @@ contactarCerrar = () => {
 };
 
 /* FIN Formulario */
+
+
+selectPest =(pestMostrar)=>{
+
+  var listaPest = document.getElementsByClassName("container_actividades");
+
+  for(var i =0 ; i< listaPest.length;i++){
+    listaPest[i].style.display="none";
+  }
+
+  document.getElementById(pestMostrar).style.display="flex";
+
+}
