@@ -183,7 +183,7 @@ selectPest = (pestMostrar, pestClick) => {
   for (var i = 0; i < listaPest.length; i++) {
     listaPest[i].style.display = "none";
   }
-  
+
   /* pesMostrar -> será un string con el que identificaremos la id del elemento
   localizado en la lista, será el elemento de la clase container_actividades y con id "X"
   lo mostraremos*/
@@ -193,8 +193,9 @@ selectPest = (pestMostrar, pestClick) => {
   var tabLinks = document.getElementsByClassName("pestanasP");
 
   for (var i = 0; i < tabLinks.length; i++) {
-    console.log(tabLinks);
+    console.log(tabLinks[i]);
     tabLinks[i].classList.remove("pestanasPActiva");
+    tabLinks[i].classList.remove("pestanasActivaRefresh");
   }
   document.getElementById(pestClick).classList.add("pestanasPActiva");
 };
