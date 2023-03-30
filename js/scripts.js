@@ -1,5 +1,6 @@
 // ********************************************* //
 //MENU INICIO
+// ********************************************* //
 //Oculta el menu en base del scroll
 
 var posInicioScroll = document.documentElement.scrollTop;
@@ -23,10 +24,10 @@ function estadoMenu() {
   }
   posInicioScroll = posActualScroll;
 }
-// ********************************************* //
 
 // ********************************************* //
 // LIGHTBOX
+// ********************************************* //
 // muestra imagen ampliada al seleccionarla
 
 var listaRutaImgGal = [];
@@ -107,13 +108,10 @@ retroImg = () => {
   document.getElementById("imagenMostrada").innerHTML =
     "<img class='imgLight' src=" + listaRutaImgGal[numeroImg] + "></img>";
 };
-// ********************************************* //
-
-
-
 
 // ********************************************* //
 /* FORMULARIO*/
+// ********************************************* //
 
 /*Realiza la función de mostrar el modal, así como bloquear el scroll. 
 Gestiona el mensaje recibido por el usuario */
@@ -169,11 +167,10 @@ contactarCerrar = () => {
   var telefono = (document.getElementById("formTel").value = "");
   var email = (document.getElementById("formEmail").value = "");
 };
-/// ********************************************* //
-
 
 // ********************************************* //
 // PESTAÑAS
+// ********************************************* //
 
 selectPest = (pestMostrar, pestClick) => {
   /*Creamos un array con los elementos de la clase contanier_actividades */
@@ -199,5 +196,3 @@ selectPest = (pestMostrar, pestClick) => {
   }
   document.getElementById(pestClick).classList.add("pestanasPActiva");
 };
-
-// ********************************************* //
