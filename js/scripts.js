@@ -66,7 +66,6 @@ comeToLight = () => {
         !event.target.matches(".botonLB") &&
         !event.target.matches(".material-symbols-outlined")
       ) {
-       
         document.getElementById("modalLightBox").style.display = "none";
         document.documentElement.style.overflow = "auto";
       }
