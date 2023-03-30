@@ -398,8 +398,8 @@ header {
   top: 0;
 }
 #imagenMostradaContainer {
-  width: 70vw;
-  height: 85vh;
+  width: 80vw;
+  height: 80vh;
 
   background-color: #242629;
   display: flex;
@@ -421,7 +421,7 @@ header {
 }
 #imagenMostrada img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .botonLB {
