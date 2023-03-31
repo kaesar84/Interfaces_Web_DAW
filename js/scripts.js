@@ -26,6 +26,42 @@ function estadoMenu() {
 }
 
 // ********************************************* //
+//SLIDE SHOW IMAGE HERO
+// ********************************************* //
+//Cambiará la imagend e fondo de manera automática
+
+var contador =0;
+
+heroSlideShow = () =>{
+
+  var listaBackgrounds = [
+    " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero1.jpg')",
+    " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero2.jpg')",
+    " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero3.jpg')"
+  ];
+
+  contador++;
+  
+  if(contador>listaBackgrounds.length-1){
+    contador=0;
+  }
+
+  document.getElementById("cabecera").style.backgroundImage = listaBackgrounds[contador];
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+// ********************************************* //
 // LIGHTBOX
 // ********************************************* //
 // muestra imagen ampliada al seleccionarla
@@ -110,6 +146,36 @@ retroImg = () => {
 };
 
 // ********************************************* //
+// PESTAÑAS
+// ********************************************* //
+
+selectPest = (pestMostrar, pestClick) => {
+  /*Creamos un array con los elementos de la clase contanier_actividades */
+  var listaPest = document.getElementsByClassName("container_actividades");
+
+  /*Recorremos el array aplicando propiedad para ocultarlos */
+  for (var i = 0; i < listaPest.length; i++) {
+    listaPest[i].style.display = "none";
+  }
+
+  /* pesMostrar -> será un string con el que identificaremos la id del elemento
+  localizado en la lista, será el elemento de la clase container_actividades y con id "X"
+  lo mostraremos*/
+
+  document.getElementById(pestMostrar).style.display = "flex";
+
+  var tabLinks = document.getElementsByClassName("pestanasP");
+
+  for (var i = 0; i < tabLinks.length; i++) {
+    console.log(tabLinks[i]);
+    tabLinks[i].classList.remove("pestanasPActiva");
+    tabLinks[i].classList.remove("pestanasActivaRefresh");
+  }
+  document.getElementById(pestClick).classList.add("pestanasPActiva");
+};
+
+
+// ********************************************* //
 /* FORMULARIO*/
 // ********************************************* //
 
@@ -168,31 +234,4 @@ contactarCerrar = () => {
   var email = (document.getElementById("formEmail").value = "");
 };
 
-// ********************************************* //
-// PESTAÑAS
-// ********************************************* //
 
-selectPest = (pestMostrar, pestClick) => {
-  /*Creamos un array con los elementos de la clase contanier_actividades */
-  var listaPest = document.getElementsByClassName("container_actividades");
-
-  /*Recorremos el array aplicando propiedad para ocultarlos */
-  for (var i = 0; i < listaPest.length; i++) {
-    listaPest[i].style.display = "none";
-  }
-
-  /* pesMostrar -> será un string con el que identificaremos la id del elemento
-  localizado en la lista, será el elemento de la clase container_actividades y con id "X"
-  lo mostraremos*/
-
-  document.getElementById(pestMostrar).style.display = "flex";
-
-  var tabLinks = document.getElementsByClassName("pestanasP");
-
-  for (var i = 0; i < tabLinks.length; i++) {
-    console.log(tabLinks[i]);
-    tabLinks[i].classList.remove("pestanasPActiva");
-    tabLinks[i].classList.remove("pestanasActivaRefresh");
-  }
-  document.getElementById(pestClick).classList.add("pestanasPActiva");
-};

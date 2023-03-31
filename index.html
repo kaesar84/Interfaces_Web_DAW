@@ -20,6 +20,10 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- Pre carga img (navegadores compatibles basados en chromium)  -->
+<link rel="preload" as="image" href="/media/imagenes/header/Hero1.jpg">
+<link rel="preload" as="image" href="/media/imagenes/header/Hero2.jpg">
+<link rel="preload" as="image" href="/media/imagenes/header/Hero3.jpg">
 
 </head>
 
@@ -385,7 +389,8 @@
   </script>
 
   <script>
-    comeToLight();
+  setInterval(heroSlideShow,2000); 
+  comeToLight();
   </script>
 
 </body>

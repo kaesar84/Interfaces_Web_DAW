@@ -50,8 +50,8 @@ section {
   height: 700px;
   background-color: #4d413d;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/media/imagenes/header/Hero.jpg");
-  background-position: center;
+    url("/media/imagenes/header/Hero1.jpg");
+  /*background-position: center;*/
   background-size: cover;
 }
 
