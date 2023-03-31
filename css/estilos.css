@@ -48,16 +48,82 @@ section {
 #cabecera {
   width: 100%;
   height: 700px;
-  background-color: #4d413d;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  
+  
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/media/imagenes/header/Hero1.jpg");
-  /*background-position: center;*/
-  background-size: cover;
+  background-position: center;*/
+
 }
 
-header {
+.fondosHero{
   width: 100%;
+  height: 700px;
+  position: absolute;
+  background-size: cover;
+  
+ 
+
 }
+
+#fondoHero1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/media/imagenes/header/Hero1.jpg");
+    z-index: 1;
+   
+    
+}
+#fondoHero2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/media/imagenes/header/Hero2.jpg");
+    z-index: 0;
+}
+#fondoHero3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/media/imagenes/header/Hero3.jpg");
+    z-index: 0;
+}
+
+.heroMostrada{
+  animation-name: aniHeroImage;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; /*Mantiene las propiedades establecidas en la animacion */
+}
+
+.heroSiguiente{
+  animation-name: aniHeroImageSiguiente;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.heroOculta{
+ display: none;
+}
+
+
+
+
+@keyframes aniHeroImage{
+  0%{
+  margin-left: 0%;
+  }
+  100%{
+    margin-left: -100%;
+  }
+}
+@keyframes aniHeroImageSiguiente{
+  0%{
+  margin-left: 100%;
+  }
+  100%{
+    margin-left: 0%;
+  }
+}
+
+
+
 
 /* menu inicio */
 
@@ -145,6 +211,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .logo {
@@ -154,7 +221,7 @@ header {
   animation-name: animacion_logo;
   animation-duration: 3s;
   animation-iteration-count: initial;
-  z-index: 2;
+  z-index: 10;
 }
 
 @keyframes animacion_logo {
@@ -177,6 +244,7 @@ header {
   animation-name: animacion_lema;
   animation-duration: 3s;
   animation-iteration-count: initial;
+  z-index: 10;
 }
 
 @keyframes animacion_lema {
@@ -614,7 +682,8 @@ input {
   align-content: center;
   justify-content: center;
   background-color: rgba(4, 8, 15, 0.8);
-  top: 0;
+  
+  
 }
 #modalBoxF {
   width: 25%;

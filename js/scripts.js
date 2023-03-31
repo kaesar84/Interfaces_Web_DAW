@@ -30,36 +30,63 @@ function estadoMenu() {
 // ********************************************* //
 //Cambiará la imagend e fondo de manera automática
 
-var contador =0;
+var contador = 0;
 
-heroSlideShow = () =>{
-
+heroSlideShow = () => {
   var listaBackgrounds = [
     " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero1.jpg')",
     " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero2.jpg')",
-    " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero3.jpg')"
+    " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/imagenes/header/Hero3.jpg')",
   ];
 
   contador++;
-  
-  if(contador>listaBackgrounds.length-1){
-    contador=0;
+
+  if (contador > listaBackgrounds.length - 1) {
+    contador = 0;
   }
 
-  document.getElementById("cabecera").style.backgroundImage = listaBackgrounds[contador];
-
- 
-
-}
+  document.getElementById("cabecera").style.backgroundImage =
+    listaBackgrounds[contador];
+};
 
 
 
+//Cambiará la imagend e fondo de manera automática con animacion
+
+var contadorNext = 0;
+var contadorMain = 0;
+
+heroSlideShowAnim = () => {
+  
+  var listaBackgroundsAnim = document.getElementsByClassName("fondosHero");
+
+  contadorNext++;
+  contadorMain = contadorNext - 1;
+
+  if (contadorNext == listaBackgroundsAnim.length) {
+    contadorNext = 0;
+  }
+  if (contadorMain < 0) {
+    contadorMain == listaBackgroundsAnim.length - 1;
+  }
 
 
+  for (var i = 0; i < listaBackgroundsAnim.length; i++) {
+    console.log(listaBackgroundsAnim[i]);
+    listaBackgroundsAnim[i].classList.remove("heroSiguiente");
+    listaBackgroundsAnim[i].classList.remove("heroMostrada");
+    listaBackgroundsAnim[i].classList.remove("heroOculta");
 
+    if (i == contadorNext) {
+      listaBackgroundsAnim[i].classList.add("heroSiguiente");
+    } else if (i == (contadorMain-1)) {
+      listaBackgroundsAnim[i].classList.add("heroMostrada"); //sale de pantalla
+    } else{
+      listaBackgroundsAnim[i].classList.add("heroOculta"); //display none
+    }
 
-
-
+  }
+};
 
 // ********************************************* //
 // LIGHTBOX
@@ -174,7 +201,6 @@ selectPest = (pestMostrar, pestClick) => {
   document.getElementById(pestClick).classList.add("pestanasPActiva");
 };
 
-
 // ********************************************* //
 /* FORMULARIO*/
 // ********************************************* //
@@ -233,5 +259,3 @@ contactarCerrar = () => {
   var telefono = (document.getElementById("formTel").value = "");
   var email = (document.getElementById("formEmail").value = "");
 };
-
-

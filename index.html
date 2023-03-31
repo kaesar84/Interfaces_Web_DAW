@@ -20,15 +20,20 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Pre carga img (navegadores compatibles basados en chromium)  -->
+  <!-- Pre carga img (navegadores compatibles basados en chromium) 
 <link rel="preload" as="image" href="/media/imagenes/header/Hero1.jpg">
 <link rel="preload" as="image" href="/media/imagenes/header/Hero2.jpg">
-<link rel="preload" as="image" href="/media/imagenes/header/Hero3.jpg">
+<link rel="preload" as="image" href="/media/imagenes/header/Hero3.jpg"> -->
 
 </head>
 
 <body>
   <header id="cabecera">
+
+    <div class="fondosHero" id="fondoHero1"></div>
+    <div class="fondosHero" id="fondoHero2"></div>
+    <div class="fondosHero" id="fondoHero3"></div>
+
     <!-- Menú cabecera  -->
     <div id="menu">
       <nav id="menuBar">
@@ -389,7 +394,8 @@
   </script>
 
   <script>
-  setInterval(heroSlideShow,2000); 
+  //setInterval(heroSlideShow,3000);
+  setInterval(heroSlideShowAnim,3000); 
   comeToLight();
   </script>
 
