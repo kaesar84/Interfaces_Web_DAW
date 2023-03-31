@@ -79,7 +79,7 @@ heroSlideShowAnim = () => {
 
     if (i == contadorNext) {
       listaBackgroundsAnim[i].classList.add("heroSiguiente");
-    } else if (i == (contadorMain-1)) {
+    } else if (i == (contadorMain)) {
       listaBackgroundsAnim[i].classList.add("heroMostrada"); //sale de pantalla
     } else{
       listaBackgroundsAnim[i].classList.add("heroOculta"); //display none
