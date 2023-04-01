@@ -49,15 +49,12 @@ heroSlideShow = () => {
     listaBackgrounds[contador];
 };
 
-
-
 //Cambiará la imagend e fondo de manera automática con animacion
 
 var contadorNext = 0;
 var contadorMain = 0;
 
 heroSlideShowAnim = () => {
-  
   var listaBackgroundsAnim = document.getElementsByClassName("fondosHero");
 
   contadorNext++;
@@ -70,7 +67,6 @@ heroSlideShowAnim = () => {
     contadorMain == listaBackgroundsAnim.length - 1;
   }
 
-
   for (var i = 0; i < listaBackgroundsAnim.length; i++) {
     console.log(listaBackgroundsAnim[i]);
     listaBackgroundsAnim[i].classList.remove("heroSiguiente");
@@ -79,12 +75,11 @@ heroSlideShowAnim = () => {
 
     if (i == contadorNext) {
       listaBackgroundsAnim[i].classList.add("heroSiguiente");
-    } else if (i == (contadorMain)) {
+    } else if (i == contadorMain) {
       listaBackgroundsAnim[i].classList.add("heroMostrada"); //sale de pantalla
-    } else{
+    } else {
       listaBackgroundsAnim[i].classList.add("heroOculta"); //display none
     }
-
   }
 };
 
@@ -221,27 +216,38 @@ contactarAbrir = () => {
 
   (function formCheck() {
     if (!document.getElementById("formNombre").checkValidity()) {
-      mensaje = "Introduce un nombre correcto";
+      mensaje =
+        "<span class='estiloTextomodal'>Uups!</span> <br>Introduce un nombre correcto";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else if (!document.getElementById("formApellidos").checkValidity()) {
-      mensaje = "Introduce un apellido correcto";
+      mensaje =
+        "<span class='estiloTextomodal'>Uups!</span> <br>Introduce los apellido correctos";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else if (!document.getElementById("formTel").checkValidity()) {
-      mensaje = "Introduce un télefono correcto";
+      mensaje =
+        "<span class='estiloTextomodal'>Uups!</span> <br>Introduce un télefono correcto";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else if (!document.getElementById("formEmail").checkValidity()) {
-      mensaje = "Introduce e-mail correcto";
+      mensaje =
+        "<span class='estiloTextomodal'>Uups!</span> <br>Introduce e-mail correcto";
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     } else {
       document.getElementById("modalBoxF").style.width = "30%";
       document.getElementById("modalBoxF").style.height = "30%";
 
       mensaje =
-        "Hola " +
+        "<span class='estiloTextomodal'>Hola " +
         nombre +
-        ",<br>contactaremos en tu teléfono " +
+        "</span>" +
+        "<br>En breve nos podremos en contacto<br> Télefono: " +
+        "<span class='estiloTextomodal'>" +
         telefono +
-        "<br>Gracias por tu confianza";
+        "</span>" +
+        ("<br>E-mail: " +
+          "<span class='estiloTextomodal'>" +
+          email +
+          "</span>");
+
       document.getElementById("mensajeFormulario").innerHTML = mensaje;
     }
   })();

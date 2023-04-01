@@ -48,82 +48,69 @@ section {
 #cabecera {
   width: 100%;
   height: 700px;
-  
-  
+
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/media/imagenes/header/Hero1.jpg");
   background-position: center;*/
-
 }
 
-.fondosHero{
+.fondosHero {
   width: 100%;
   height: 700px;
   position: absolute;
   background-size: cover;
-  
- 
-
 }
 
-#fondoHero1{
+#fondoHero1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/media/imagenes/header/Hero1.jpg");
-    z-index: 1;
-   
-    
+  z-index: 1;
 }
-#fondoHero2{
+#fondoHero2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/media/imagenes/header/Hero2.jpg");
-    z-index: 0;
+  z-index: 0;
 }
-#fondoHero3{
+#fondoHero3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/media/imagenes/header/Hero3.jpg");
-    z-index: 0;
+  z-index: 0;
 }
 
-.heroMostrada{
+.heroMostrada {
   animation-name: aniHeroImage;
   animation-iteration-count: 1;
   animation-duration: 1s;
   animation-fill-mode: forwards; /*Mantiene las propiedades establecidas en la animacion */
 }
 
-.heroSiguiente{
+.heroSiguiente {
   animation-name: aniHeroImageSiguiente;
   animation-iteration-count: 1;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-.heroOculta{
- display: none;
+.heroOculta {
+  display: none;
 }
 
-
-
-
-@keyframes aniHeroImage{
-  0%{
-  margin-left: 0%;
+@keyframes aniHeroImage {
+  0% {
+    margin-left: 0%;
   }
-  100%{
+  100% {
     margin-left: -100%;
   }
 }
-@keyframes aniHeroImageSiguiente{
-  0%{
-  margin-left: 100%;
+@keyframes aniHeroImageSiguiente {
+  0% {
+    margin-left: 100%;
   }
-  100%{
+  100% {
     margin-left: 0%;
   }
 }
-
-
-
 
 /* menu inicio */
 
@@ -211,7 +198,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .logo {
@@ -682,8 +668,6 @@ input {
   align-content: center;
   justify-content: center;
   background-color: rgba(4, 8, 15, 0.8);
-  
-  
 }
 #modalBoxF {
   width: 25%;
@@ -721,7 +705,13 @@ input {
 }
 
 #mensajeFormulario {
+  align-self: center;
   font-size: 32px;
+}
+
+.estiloTextomodal {
+  color: #7f5af0;
+  font-size: 36px;
 }
 
 /* FIN propiedades Elementos --> Sección ACTÍVATE */
