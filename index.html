@@ -8,22 +8,29 @@
   <title>Sport Time</title>
   <link rel="stylesheet" href="/css/estilos.css" />
   <script src="/js/scripts.js"></script>
+  <!-- Google Fonts Teko  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
-  <!-- Google Fonts Teko  -->
 
+  <!-- Google Icons  -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- Google Icons  -->
 
+  <!--Libreria AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Pre carga img (navegadores compatibles basados en chromium)  -->
-<link rel="preload" as="image" href="/media/imagenes/header/Hero1.jpg">
-<link rel="preload" as="image" href="/media/imagenes/header/Hero2.jpg">
-<link rel="preload" as="image" href="/media/imagenes/header/Hero3.jpg">
+  <link rel="preload" as="image" href="/media/imagenes/header/Hero1.jpg">
+  <link rel="preload" as="image" href="/media/imagenes/header/Hero2.jpg">
+  <link rel="preload" as="image" href="/media/imagenes/header/Hero3.jpg">
+
+  <!--Libreria Parallax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <script src="js/parallax.js-1.5.0/parallax.js- 1.5.0/parallax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
 </head>
 
@@ -59,10 +66,12 @@
     </div>
   </header>
 
-  <section id="conocenos">
+  <section id="conocenos" class="parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+
+    
     <!-- Título de sección  Conócenos -->
     <div class="container-titulo">
-      <p class="titulo-seccion-claro">CONÓCENOS</p>
+      <p class="titulo-seccion-claro parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png"">CONÓCENOS</p>
     </div>
 
     <!-- Contenido sección Conócenos -->
@@ -97,295 +106,302 @@
 
   <section>
 
-    <div class="container-titulo">
-      <p class="titulo-seccion-claro">Beneficios de la práctica deportiva</p>
-
-
+    <div class="container-titulo parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png"></div>
+    <p class="titulo-seccion-claro parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">Beneficios de la práctica deportiva</p>
     </div>
 
-    <div class="container-acordeon">
+    <div class="container-acordeon parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
 
 
-    <div class="acordeon">
-      <div class="acordeon-header" onclick="desplegar(event)">Beneficios para la salud física</div>
-      <div class="acordeon-body">
-       <p class="contenidoBeneficios">La práctica regular de deportes tiene un impacto positivo en la salud física de las personas. El ejercicio ayuda a fortalecer los músculos, huesos y articulaciones, y reduce el riesgo de enfermedades cardiovasculares, obesidad y diabetes. Además, el deporte también contribuye a mejorar la capacidad respiratoria y aumentar la energía y resistencia física.</p> 
-      </div>
-      <div class="acordeon-header" onclick="desplegar(event)">Beneficios para la salud mental</div>
-      <div class="acordeon-body">
-        <p class="contenidoBeneficios">El deporte no solo tiene beneficios para el cuerpo, sino también para la mente. La actividad física libera endorfinas, hormonas que producen una sensación de bienestar y reducen el estrés y la ansiedad. Además, el deporte fomenta la concentración, la autoestima y la confianza en uno mismo, lo que contribuye a mejorar la salud mental y emocional</p>
-      </div>
-      <div class="acordeon-header" onclick="desplegar(event)">Beneficios sociales</div>
-      <div class="acordeon-body">
-        <p class="contenidoBeneficios">La práctica del deporte también tiene beneficios sociales. El deporte es una actividad que puede realizarse en grupo, lo que fomenta la convivencia, el trabajo en equipo y la solidaridad. Además, el deporte puede servir como herramienta para la integración social y la inclusión, al promover valores como el respeto, la tolerancia y la igualdad entre las personas.</p>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-  <section id="instalaciones">
-    <!-- Título de sección  Instalaciones -->
-    <div class="container-titulo">
-      <p class="titulo-seccion-oscuro">INSTALACIONES</p>
-    </div>
-
-    <!-- Contenido sección instalaciones -->
-    <div class="container-instalaciones">
-      <!-- Galería de imágenes -->
-
-      <div class="container-galeria" data-aos="zoom-out" data-aos-duration="1000">
-
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones1.jpg" alt="Sala con esterillas"> </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones2.jpg" alt="Pesas"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones3.jpg" alt="Jacuzzi"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones4.jpg" alt="Sala de enterno"></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones5.jpg" alt="Sala de entreno"></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones6.jpg" alt="Piscina"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones7.jpg" alt="Discos de peso"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones8.jpg" alt="Sala de entreno"></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones9.jpg" alt="Piscina"></div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones10.jpg" alt="Pesas"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones11.jpg" alt="Camilla de masaje"></div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
-            src="/media/imagenes/instalaciones/Instalaciones12.jpg" alt="Ring boxeo"></div>
-      </div>
-
-      <div id="modalLightBox">
-
-        <button class="botonLB" onclick="retroImg()"><span class="material-symbols-outlined">
-            arrow_back_ios
-          </span></button>
-
-        <div id="imagenMostradaContainer">
-          <div id="imagenMostrada">
-
-          </div>
-
+      <div class="acordeon parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+        <div class="acordeon-header" onclick="desplegar(event)">Beneficios para la salud física</div>
+        <div class="acordeon-body">
+          <p class="contenidoBeneficios">La práctica regular de deportes tiene un impacto positivo en la salud física de
+            las personas. El ejercicio ayuda a fortalecer los músculos, huesos y articulaciones, y reduce el riesgo de
+            enfermedades cardiovasculares, obesidad y diabetes. Además, el deporte también contribuye a mejorar la
+            capacidad respiratoria y aumentar la energía y resistencia física.</p>
         </div>
-        <button class="botonLB" onclick="nextImg()"><span class="material-symbols-outlined">
-            arrow_forward_ios
-          </span></button>
-
+        <div class="acordeon-header" onclick="desplegar(event)">Beneficios para la salud mental</div>
+        <div class="acordeon-body">
+          <p class="contenidoBeneficios">El deporte no solo tiene beneficios para el cuerpo, sino también para la mente.
+            La actividad física libera endorfinas, hormonas que producen una sensación de bienestar y reducen el estrés
+            y la ansiedad. Además, el deporte fomenta la concentración, la autoestima y la confianza en uno mismo, lo
+            que contribuye a mejorar la salud mental y emocional</p>
+        </div>
+        <div class="acordeon-header" onclick="desplegar(event)">Beneficios sociales</div>
+        <div class="acordeon-body">
+          <p class="contenidoBeneficios">La práctica del deporte también tiene beneficios sociales. El deporte es una
+            actividad que puede realizarse en grupo, lo que fomenta la convivencia, el trabajo en equipo y la
+            solidaridad. Además, el deporte puede servir como herramienta para la integración social y la inclusión, al
+            promover valores como el respeto, la tolerancia y la igualdad entre las personas.</p>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section id="actividades">
-    <!-- Título de sección  Actividades -->
-    <div class="container-titulo">
-      <p class="titulo-seccion-claro">ACTIVIDADES</p>
     </div>
 
-    <!-- Contenido sección actividades -->
-    <!-- Menú / pestañas-->
-    <div class="container-actividades">
-      <div class="container-galeria-actividades" name="link_container" data-aos="zoom-out" data-aos-duration="1000">
-        <div class="pestanas">
-          <p id="pindoor" class="pestanasP pestanasPActiva" onclick="selectPest('act_indoor','pindoor')"> INDOOR</p>
-        </div>
-        <div class="pestanas">
-          <p id="poutdoor" class="pestanasP pestanasPActiva pestanasActivaRefresh"
-            onclick="selectPest('act_outdoor','poutdoor')"> OUTDOOR</p>
-        </div>
-        <div class="pestanas">
-          <p id="paquazone" class="pestanasP pestanasPActiva pestanasActivaRefresh"
-            onclick="selectPest('act_aquazone','paquazone')"> AQUAZONE</p>
-        </div>
 
+
+
+
+    <section id="instalaciones" class="parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+      <!-- Título de sección  Instalaciones -->
+      <div class="container-titulo">
+        <p class="titulo-seccion-oscuro parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">INSTALACIONES</p>
+      </div>
+
+      <!-- Contenido sección instalaciones -->
+      <div class="container-instalaciones">
         <!-- Galería de imágenes -->
-        <div class="container_actividades" id="act_indoor">
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades1.jpg" alt="Ejerciio de flexibilidad">
-            <p>Flexibilidad</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades2.jpg" alt="Chicha golpeando saco">
-            <p>Kick Boxing</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades3.jpg" alt="Levantamiento de peso">
-            <p>Halterofilia</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades4.jpg" alt="Ejercicio aerobico de combate">
-            <p>Body Combat</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades5.jpg" alt="Ejercicio flexibilidad niños">
-            <p>Rítmica Kids</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades6.jpg" alt="Escalada indoor">
-            <p>Escalada</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades7.jpg" alt="Pareja haciendo ejercicio">
-            <p>Fitness Duo</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades8.jpg" alt="Clase de Yoga">
-            <p>Yoga</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/indoor/Actividades9.jpg" alt="Ejercicio fitness">
-            <p>Fitness</p>
-          </div>
+
+        <div class="container-galeria">
+
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones1.jpg" alt="Sala con esterillas"> </div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones2.jpg" alt="Pesas"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones3.jpg" alt="Jacuzzi"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones4.jpg" alt="Sala de enterno"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones5.jpg" alt="Sala de entreno"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones6.jpg" alt="Piscina"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones7.jpg" alt="Discos de peso"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones8.jpg" alt="Sala de entreno"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones9.jpg" alt="Piscina"></div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones10.jpg" alt="Pesas"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones11.jpg" alt="Camilla de masaje"></div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="galeria_inst"><img class="img_gal"
+              src="/media/imagenes/instalaciones/Instalaciones12.jpg" alt="Ring boxeo"></div>
         </div>
 
-        <div class="container_actividades" id="act_outdoor">
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades1.jpg" alt="Bicicleta de trial">
-            <p>Bike Trial</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades2.jpg" alt="Ejercicio Crossfit">
-            <p>Crossfit</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades3.jpg" alt="Escalada">
-            <p>Escalada</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades4.jpg" alt="Moto de trial">
-            <p>Motor Trial</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades5.jpg" alt="Partido Beisbol">
-            <p>Béisbol</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades6.jpg" alt="Partido de rugby">
-            <p>Rugby</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades7.jpg" alt="Mujeres andando">
-            <p>Walking</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades8.jpg" alt="Ejercicio Skate park">
-            <p>Skate Park</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/outdoor/Actividades9.jpg" alt="Fútbol">
-            <p>Fútbol</p>
-          </div>
-        </div>
+        <div id="modalLightBox">
 
-        <div class="container_actividades" id="act_aquazone">
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades1.jpg" alt="FlyBoard">
-            <p>Fly Board</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades2.jpg" alt="Moto de agua">
-            <p>Motor Aqua</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades3.jpg" alt="Aguas bravas">
-            <p>Aguas Bravas</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades4.jpg" alt="Fly Beach">
-            <p>Fly Beach</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades5.jpg" alt="Waterpolo">
-            <p>Waterpolo</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades6.jpg" alt="Padel Surf">
-            <p>Padel Surf</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades7.jpg" alt="Niño practicando surf">
-            <p>Surf Kids</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades8.jpg" alt="Windsurf">
-            <p>Windsurf</p>
-          </div>
-          <div class="actividades">
-            <img src="/media/imagenes/actividades/aquazone/Actividades9.jpg" alt="Inicio surf">
-            <p>Surf</p>
-          </div>
-        </div>
+          <button class="botonLB" onclick="retroImg()"><span class="material-symbols-outlined">
+              arrow_back_ios
+            </span></button>
 
+          <div id="imagenMostradaContainer">
+            <div id="imagenMostrada">
+
+            </div>
+
+          </div>
+          <button class="botonLB" onclick="nextImg()"><span class="material-symbols-outlined">
+              arrow_forward_ios
+            </span></button>
+
+        </div>
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-
-  <section id="activate">
-    <!-- Título de sección  Actívate -->
-    <div class="container-titulo">
-      <p class="titulo-seccion-oscuro">ACTÍVATE</p>
-    </div>
-
-    <!-- Contenido sección Actívate -->
-    <div class="container-activate">
-      <!-- Imagen localizacion -->
-      <div class="fondo-activate" data-aos="zoom-out" data-aos-duration="1000">
-        <div class="localizacion" data-aos="fade-right" data-aos-duration="1000">
-          <div class="imagen-mapa">
-            <img src="/media/imagenes/activate/mapa.png" alt="">
-
-          </div>
-        </div>
-
-        <!-- Formulario -->
-
-        <div id="container-formulario" data-aos="fade-left" data-aos-duration="1000">
-          <form id="formulario" action="">
-            <p class="datos-contacto">Datos de contacto</p>
-            <label for="nombre">
-              <span class="material-symbols-outlined"> account_circle </span>
-              Nombre</label>
-            <input type="text" id="formNombre" name="nombre" required />
-            <label for="apellidos"><span class="material-symbols-outlined"> account_circle </span>
-              Apellidos</label>
-            <input type="text" id="formApellidos" name="apellidos" required />
-            <label for="telefono">
-              <span class="material-symbols-outlined">call</span>
-              Télefono</label>
-            <input type="number" id="formTel" name="telefono" min="99999999" max="999999999" required />
-            <label for="email"><span class="material-symbols-outlined">
-                alternate_email
-              </span>
-              E-mail</label>
-            <input type="email" id="formEmail" name="email" required />
-            <button id="botonFormulario" onclick="contactarAbrir()" type="button">Enviar</input>
-          </form>
-        </div>
-
-        <div id="modalFormulario">
-          <div id="modalBoxF">
-            <p id="mensajeFormulario"></p>
-            <button id="botonfmodal" onclick="contactarCerrar()">OK</button>
-          </div>
-        </div>
-
+    <section id="actividades parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+      <!-- Título de sección  Actividades -->
+      <div class="container-titulo">
+        <p class="titulo-seccion-claro parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">ACTIVIDADES</p>
       </div>
-  </section>
 
- 
+      <!-- Contenido sección actividades -->
+      <!-- Menú / pestañas-->
+      <div class="container-actividades parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+        <div class="container-galeria-actividades">
+          <div class="pestanas">
+            <p id="pindoor" class="pestanasP pestanasPActiva" onclick="selectPest('act_indoor','pindoor')"> INDOOR</p>
+          </div>
+          <div class="pestanas">
+            <p id="poutdoor" class="pestanasP pestanasPActiva pestanasActivaRefresh"
+              onclick="selectPest('act_outdoor','poutdoor')"> OUTDOOR</p>
+          </div>
+          <div class="pestanas">
+            <p id="paquazone" class="pestanasP pestanasPActiva pestanasActivaRefresh"
+              onclick="selectPest('act_aquazone','paquazone')"> AQUAZONE</p>
+          </div>
 
-  
+          <!-- Galería de imágenes -->
+          <div class="container_actividades" id="act_indoor">
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades1.jpg" alt="Ejerciio de flexibilidad">
+              <p>Flexibilidad</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades2.jpg" alt="Chicha golpeando saco">
+              <p>Kick Boxing</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades3.jpg" alt="Levantamiento de peso">
+              <p>Halterofilia</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades4.jpg" alt="Ejercicio aerobico de combate">
+              <p>Body Combat</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades5.jpg" alt="Ejercicio flexibilidad niños">
+              <p>Rítmica Kids</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades6.jpg" alt="Escalada indoor">
+              <p>Escalada</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades7.jpg" alt="Pareja haciendo ejercicio">
+              <p>Fitness Duo</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades8.jpg" alt="Clase de Yoga">
+              <p>Yoga</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/indoor/Actividades9.jpg" alt="Ejercicio fitness">
+              <p>Fitness</p>
+            </div>
+          </div>
+
+          <div class="container_actividades" id="act_outdoor">
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades1.jpg" alt="Bicicleta de trial">
+              <p>Bike Trial</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades2.jpg" alt="Ejercicio Crossfit">
+              <p>Crossfit</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades3.jpg" alt="Escalada">
+              <p>Escalada</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades4.jpg" alt="Moto de trial">
+              <p>Motor Trial</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades5.jpg" alt="Partido Beisbol">
+              <p>Béisbol</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades6.jpg" alt="Partido de rugby">
+              <p>Rugby</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades7.jpg" alt="Mujeres andando">
+              <p>Walking</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades8.jpg" alt="Ejercicio Skate park">
+              <p>Skate Park</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/outdoor/Actividades9.jpg" alt="Fútbol">
+              <p>Fútbol</p>
+            </div>
+          </div>
+
+          <div class="container_actividades" id="act_aquazone">
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades1.jpg" alt="FlyBoard">
+              <p>Fly Board</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades2.jpg" alt="Moto de agua">
+              <p>Motor Aqua</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades3.jpg" alt="Aguas bravas">
+              <p>Aguas Bravas</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades4.jpg" alt="Fly Beach">
+              <p>Fly Beach</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades5.jpg" alt="Waterpolo">
+              <p>Waterpolo</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades6.jpg" alt="Padel Surf">
+              <p>Padel Surf</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades7.jpg" alt="Niño practicando surf">
+              <p>Surf Kids</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades8.jpg" alt="Windsurf">
+              <p>Windsurf</p>
+            </div>
+            <div class="actividades">
+              <img src="/media/imagenes/actividades/aquazone/Actividades9.jpg" alt="Inicio surf">
+              <p>Surf</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section id="activate">
+      <!-- Título de sección  Actívate -->
+      <div class="container-titulo">
+        <p class="titulo-seccion-oscuro parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">ACTÍVATE</p>
+      </div>
+
+      <!-- Contenido sección Actívate -->
+      <div class="container-activate parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png">
+        <!-- Imagen localizacion -->
+        <div class="fondo-activate">
+          <div class="localizacion" data-aos="fade-right" data-aos-duration="1000">
+            <div class="imagen-mapa">
+              <img src="/media/imagenes/activate/mapa.png" alt="">
+
+            </div>
+          </div>
+
+          <!-- Formulario -->
+
+          <div id="container-formulario" data-aos="fade-left" data-aos-duration="1000">
+            <form id="formulario" action="">
+              <p class="datos-contacto">Datos de contacto</p>
+              <label for="nombre">
+                <span class="material-symbols-outlined"> account_circle </span>
+                Nombre</label>
+              <input type="text" id="formNombre" name="nombre" required />
+              <label for="apellidos"><span class="material-symbols-outlined"> account_circle </span>
+                Apellidos</label>
+              <input type="text" id="formApellidos" name="apellidos" required />
+              <label for="telefono">
+                <span class="material-symbols-outlined">call</span>
+                Télefono</label>
+              <input type="number" id="formTel" name="telefono" min="99999999" max="999999999" required />
+              <label for="email"><span class="material-symbols-outlined">
+                  alternate_email
+                </span>
+                E-mail</label>
+              <input type="email" id="formEmail" name="email" required />
+              <button id="botonFormulario" onclick="contactarAbrir()" type="button">Enviar</input>
+            </form>
+          </div>
+
+          <div id="modalFormulario">
+            <div id="modalBoxF">
+              <p id="mensajeFormulario"></p>
+              <button id="botonfmodal" onclick="contactarCerrar()">OK</button>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+
+
+
   </section>
 
 
@@ -393,7 +409,7 @@
   <!-- Pie de página  -->
   <footer id="pie-pagina">
     <!-- Redes sociales  -->
-    <div class="container-pie-pagina">
+    <div class="container-pie-pagina parallax-window" data-parallax="scroll" data-image-src="/media/imagenes/parallax/FondoParallax2.png"">
 
       <a class="rrss" title="Twitch" href="http://www.twitch.com">
         <svg class="rrss_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -434,13 +450,11 @@
   </script>
 
   <script>
-  //setInterval(heroSlideShow,3000);
-  setInterval(heroSlideShowAnim,4000); 
-  comeToLight();
+    //setInterval(heroSlideShow,3000);
+    setInterval(heroSlideShowAnim, 4000);
+    comeToLight();
   </script>
 
 </body>
 
 </html>
-
-

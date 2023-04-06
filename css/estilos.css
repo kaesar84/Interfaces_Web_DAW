@@ -26,7 +26,7 @@ section {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  background-color: #242629;
+ /* background-color: #242629;*/
   margin: 0;
   padding-top: 100px;
 }
@@ -36,7 +36,7 @@ section {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  background-color: #16161a;
+  /*background-color: #16161a;*/
   margin: 0;
   padding-top: 100px;
 }
@@ -256,7 +256,7 @@ section {
 .container-conocenos {
   min-width: 100%;
   min-height: 550px;
-  background-color: #242629;
+  /*background-color: #242629;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -292,7 +292,7 @@ section {
 .container-instalaciones {
   width: 100%;
   height: 980px;
-  background-color: #16161a;
+  /*background-color: #16161a;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,7 +301,7 @@ section {
 .container-galeria {
   width: 1500px;
   height: 650px;
-  background: #242629;
+  background-color: #16161a;
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
@@ -402,7 +402,7 @@ section {
 .container-actividades {
   width: 100%;
   height: 1180px;
-  background-color: #242629;
+  /*background-color: #242629;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,7 +543,7 @@ section {
 .container-activate {
   width: 100%;
   height: 950px;
-  background-color: #16161a;
+  /*background-color: #16161a;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +552,7 @@ section {
 .fondo-activate {
   width: 1525px;
   height: 800px;
-  background-color: #242629;
+  background-color: #16161a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,7 +722,7 @@ input {
 #pie-pagina {
   width: 100%;
   height: 150px;
-  background-color: #242629;
+  background-color: #16161a;
   border-top: solid 2px #7f5af0;
 }
 
@@ -761,7 +761,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #242629;
+ /* background-color: #242629;*/
   padding-bottom: 25px;
   color: #94a1b2;
   
@@ -793,6 +793,9 @@ input {
   padding-bottom: 15px;
   padding: 15px;
   color: #ffffff;
+  background-color: #16161a;
+  margin-bottom: 25px;
+ 
 
 }
 .active{
