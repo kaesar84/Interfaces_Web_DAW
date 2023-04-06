@@ -266,7 +266,7 @@ section {
 .container-descripcion {
   width: 480px;
   height: 400px;
-  background-color: black;
+  background-color: #16161a;
 }
 .container-descripcion p {
   margin: 45px;
@@ -762,8 +762,9 @@ input {
   align-items: center;
   justify-content: center;
   background-color: #242629;
-  padding-bottom: 75px;
-  color: #ffffff;
+  padding-bottom: 25px;
+  color: #94a1b2;
+  
  
 }
 
@@ -776,10 +777,14 @@ input {
 }
 
 .acordeon-header {
-  background-color: #eee;
+  
   cursor: pointer;
   font-size: 42px;
   padding: 15px;
+  background-color: #16161a;
+  background-color: #16161a;
+  border-bottom:solid 2px #7f5af0;
+
 }
 
 .acordeon-body {
@@ -787,11 +792,14 @@ input {
   font-size: 36px;
   padding-bottom: 15px;
   padding: 15px;
+  color: #ffffff;
 
 }
 .active{
   background-color: #16161a;
   border-bottom:solid 2px #7f5af0;
+  
+  
   
 
 }
