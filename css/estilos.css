@@ -754,3 +754,44 @@ input {
 }
 
 /* FIN propiedades Elementos --> PIE-PAGINA */
+
+.container-acordeon{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242629;
+  padding-bottom: 75px;
+  color: #ffffff;
+ 
+}
+
+.acordeon {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.acordeon-header {
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 42px;
+  padding: 15px;
+}
+
+.acordeon-body {
+  display: none;
+  font-size: 36px;
+  padding-bottom: 15px;
+  padding: 15px;
+
+}
+.active{
+  background-color: #16161a;
+  border-bottom:solid 2px #7f5af0;
+  
+
+}
