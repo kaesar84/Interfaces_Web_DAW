@@ -48,8 +48,12 @@
       <nav id="menuBar">
         <ul class="lista-menu">
           <li><a href="">INICIO</a></li>
-          <li><a href="#conocenos">CONÓCENOS</a></li>
-          <li><a href="#beneficios">BENEFICIOS</a></li>
+          <li><a href="#conocenos">CONÓCENOS</a>
+            <ul class="lista-submenu">
+              <li><a href="#team">EQUIPO</a></li>
+              <li><a  href="#beneficios">BENEFICIOS</a></li>
+            </ul></li>
+    
           <li><a href="#instalaciones">INSTALACIONES</a></li>
           <li><a href="#actividades">ACTIVIDADES</a>
             <ul class="lista-submenu">
@@ -515,6 +519,7 @@
   //setInterval(heroSlideShow,3000);
   setInterval(heroSlideShowAnim,4000); 
   comeToLight();
+  activarTooltip();
   </script>
 
 </body>

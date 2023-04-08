@@ -68,7 +68,7 @@ heroSlideShowAnim = () => {
   }
 
   for (var i = 0; i < listaBackgroundsAnim.length; i++) {
-    console.log(listaBackgroundsAnim[i]);
+    // console.log(listaBackgroundsAnim[i]);
     listaBackgroundsAnim[i].classList.remove("heroSiguiente");
     listaBackgroundsAnim[i].classList.remove("heroMostrada");
     listaBackgroundsAnim[i].classList.remove("heroOculta");
@@ -189,7 +189,7 @@ selectPest = (pestMostrar, pestClick) => {
   var tabLinks = document.getElementsByClassName("pestanasP");
 
   for (var i = 0; i < tabLinks.length; i++) {
-    console.log(tabLinks[i]);
+    // console.log(tabLinks[i]);
     tabLinks[i].classList.remove("pestanasPActiva");
     tabLinks[i].classList.remove("pestanasActivaRefresh");
   }
@@ -293,24 +293,38 @@ function desplegar(event) {
 
 
 /* Tooltip */
-
 activarTooltip = () =>{
-  
-  const tooltips = document.getElementsByClassName('tooltip-container');
+  // Lista de elementos clase tooltip-container
+  var tooltips = document.getElementsByClassName('tooltip-container');
+  //Lista de elementos clase tooltip-mostrar
+  var tooltipMostrar = tooltips[i].getElementsByClassName('tooltip-mostrar');
+  //Lista de elementos clase tooltip-contenido
+  var tooltipContenido = tooltips[i].getElementsByClassName('tooltip-contenido');
 
+  /*Recorremos los elementos que son de la clase tooltip-container y buscamos los elementos
+   de clase tooltip-mostrar y tooltip-contenido y rellenamos nueva lista, se crea la 
+   correspondencia a través de los indices, ya que son iguales:
+   container[0] - mostrar[0] - contenido[0]*/
   for (let i = 0; i < tooltips.length; i++) {
-    const tooltipMostrar = tooltips[i].getElementsByClassName('tooltip-mostrar')[0];
-    const tooltipContenido = tooltips[i].getElementsByClassName('tooltip-contenido')[0];
-  
-    tooltipMostrar.addEventListener('mouseover', () => {
-      tooltipContenido.style.opacity = '1';
-      tooltipContenido.style.visibility = 'visible';
+    var tooltipMostrarS = tooltips[i].getElementsByClassName('tooltip-mostrar');
+    console.log(tooltipMostrarS);
+    var tooltipContenidoS = tooltips[i].getElementsByClassName('tooltip-contenido');
+  console.log(tooltipContenidoS);
+
+  /*Establecemos listeners en cada elemento ya indexado, cuando el ratón este posicionado
+  encima se hará visible */
+    tooltipMostrarS.addEventListener('mouseover', () => {
+      tooltipContenidoS.style.opacity = '1';
+      tooltipContenidoS.style.visibility = 'visible';
     });
   
-    tooltipMostrar.addEventListener('mouseout', () => {
-      tooltipContenido.style.opacity = '0';
-      tooltipContenido.style.visibility = 'hidden';
+    // con ratón fuera se oculta
+    tooltipMostrarS.addEventListener('mouseout', () => {
+      tooltipContenidoS.style.opacity = '0';
+      tooltipContenidoS.style.visibility = 'hidden';
     });
   }
 }
+
+
 
