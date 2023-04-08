@@ -889,3 +889,54 @@ input {
   opacity: 1;
   visibility: visible;
 }
+
+
+.filtros{
+  background-color: #242629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-btn-filtro{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-filtro{
+  width: 150px;
+  height: 45px;
+  background-color: #7f5af0;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  padding: 5px;
+  transition: all;
+  transition-duration: 0.2s;
+  margin: 25px;
+
+}
+
+.galeria-filtro{
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #16161a;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+
+}
+
+.imgfiltro{
+  width: 25%;
+  height: auto;
+  margin: 15px;
+}
