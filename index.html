@@ -52,6 +52,7 @@
             <ul class="lista-submenu">
               <li><a href="#team">EQUIPO</a></li>
               <li><a href="#beneficios">BENEFICIOS</a></li>
+              <li><a href="#filtro">ESTRELLAS</a></li>
             </ul>
           </li>
 
@@ -113,6 +114,8 @@
 
 
     <!-- Equipo -->
+
+
     <div id="team" class="container-titulo">
       <p class="titulo-seccion-claro">Equipo</p>
     </div>
@@ -156,7 +159,35 @@
 
   </section>
 
- <!-- Beneficios -->
+  <section id="filtro" class="parallax-window" data-parallax="scroll"
+  data-image-src="/media/imagenes/parallax/parallaxBack.png">
+  
+    <div class="container-titulo">
+      <p class="titulo-seccion-oscuro">NUESTRAS ESTRELLAS</p>
+    </div>
+
+<div class="filtros">
+    <div class="container-btn-filtro">
+    <button class="btn-filtro btn-filtro-click" onclick="filterImages('todos'), clicado(this)" >Todos</button>
+    <button class="btn-filtro btn-filtro-click" onclick="filterImages('box'), clicado(this)">D. Contacto</button>
+    <button class="btn-filtro btn-filtro-click" onclick="filterImages('fut'), clicado(this)">Fútbol</button>
+    <button class="btn-filtro btn-filtro-click" onclick="filterImages('run'), clicado(this)">Atletas</button>
+    </div>
+    
+    
+    
+    <div class="galeria-filtro">
+      <img src="/media/imagenes/estrellas/estrella1.jpeg" class="imgfiltro fut">
+      <img src="/media/imagenes/estrellas/estrella2.png" class="imgfiltro fut">
+      <img src="/media/imagenes/estrellas/estrella3.jpg" class="imgfiltro box">
+      <img src="/media/imagenes/estrellas/estrella4.jpg" class="imgfiltro box">
+      <img src="/media/imagenes/estrellas/estrella5.jpg" class="imgfiltro run">
+      <img src="/media/imagenes/estrellas/estrella6.jpg" class="imgfiltro run">
+      
+    </div>
+  </div>
+    </section>
+
   <div id="beneficios" class="container-titulo">
     <p class="titulo-seccion-claro">Beneficios de la práctica deportiva</p>
   </div>
@@ -190,6 +221,9 @@
     </div>
 
   </div>
+
+
+
 
 
   <section id="instalaciones" class="parallax-window" data-parallax="scroll"
@@ -452,6 +486,12 @@
       </div>
   </section>
 
+
+
+
+
+
+
   <!-- Pie de página  -->
   <footer id="pie-pagina">
     <!-- Redes sociales  -->
@@ -492,10 +532,14 @@
 
   <script>
     AOS.init();
+
+  </script>
+
+  <script>
     //setInterval(heroSlideShow,3000);
     setInterval(heroSlideShowAnim, 4000);
     comeToLight();
-    //activarTooltip();
+    activarTooltip();
   </script>
 
 </body>

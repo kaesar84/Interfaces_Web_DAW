@@ -297,18 +297,18 @@ activarTooltip = () =>{
   // Lista de elementos clase tooltip-container
   var tooltips = document.getElementsByClassName('tooltip-container');
   //Lista de elementos clase tooltip-mostrar
-  var tooltipMostrar = tooltips[i].getElementsByClassName('tooltip-mostrar');
+  var tooltipMostrar = document.getElementsByClassName('tooltip-mostrar');
   //Lista de elementos clase tooltip-contenido
-  var tooltipContenido = tooltips[i].getElementsByClassName('tooltip-contenido');
+  var tooltipContenido = document.getElementsByClassName('tooltip-contenido');
 
   /*Recorremos los elementos que son de la clase tooltip-container y buscamos los elementos
    de clase tooltip-mostrar y tooltip-contenido y rellenamos nueva lista, se crea la 
    correspondencia a través de los indices, ya que son iguales:
    container[0] - mostrar[0] - contenido[0]*/
   for (let i = 0; i < tooltips.length; i++) {
-    var tooltipMostrarS = tooltips[i].getElementsByClassName('tooltip-mostrar');
+    var tooltipMostrarS = document.getElementsByClassName('tooltip-mostrar');
     console.log(tooltipMostrarS);
-    var tooltipContenidoS = tooltips[i].getElementsByClassName('tooltip-contenido');
+    var tooltipContenidoS = document.getElementsByClassName('tooltip-contenido');
   console.log(tooltipContenidoS);
 
   /*Establecemos listeners en cada elemento ya indexado, cuando el ratón este posicionado
@@ -328,3 +328,31 @@ activarTooltip = () =>{
 
 
 
+function filterImages(category) {
+  const imagenesFiltro = document.getElementsByClassName('imgfiltro');
+  
+  for (let i = 0; i < imagenesFiltro.length; i++) {
+    const imagenesFiltroS = imagenesFiltro[i];
+   
+    if (category === 'todos') {
+      imagenesFiltroS.style.display = 'flex';
+    } else if (imagenesFiltroS.classList.contains(category)) {
+      imagenesFiltroS.style.display = 'flex';
+    } else {
+      imagenesFiltroS.style.display = 'none';
+    }
+  }
+}
+
+
+function clicado(button) {
+  // Desactivar cualquier otro botón que ya esté activo
+  var botones = document.getElementsByClassName('btn-filtro');
+  
+  for (var i = 0; i < botones.length; i++) {
+      botones[i].classList.remove('btn-filtro-click');
+      botones[i].classList.remove('btn-first');
+  }
+  // Activar el botón actual
+  button.classList.add('btn-filtro-click');
+}
