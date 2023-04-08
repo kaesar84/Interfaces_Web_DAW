@@ -803,3 +803,51 @@ input {
   
 
 }
+
+
+/* Equipo */
+.container-equipo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #242629; */
+  padding-bottom: 25px;
+}
+
+.equipo {
+  width: 80%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  
+}
+
+.galeria-equipo{
+  width: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: #16161a;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-wrap: wrap;
+  margin: 25px;
+ 
+
+  
+}
+.equipoImg{
+  width: 350px;
+  height: auto;
+  min-height: 300px;
+  margin: 10px;
+  border-radius: 2px;
+  border: 3px solid #40454b;
+  filter: grayscale(45%);
+}
+
+.equipoImg:hover{
+  filter: grayscale(0%);
+}
