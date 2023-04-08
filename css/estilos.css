@@ -761,7 +761,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #242629;
+  /* background-color: #242629; */
   padding-bottom: 25px;
   color: #94a1b2;
   
