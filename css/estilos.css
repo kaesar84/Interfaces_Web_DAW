@@ -918,7 +918,18 @@ input {
   transition: all;
   transition-duration: 0.2s;
   margin: 25px;
+}
 
+.btn-filtro-click  {
+  background-color: #40454b;
+  border: solid 1px #7f5af0;
+  transform: scale(1.1);
+}
+
+.btn-first{
+  background-color: #40454b;
+  border: solid 1px #7f5af0;
+  transform: scale(1.1);
 }
 
 .galeria-filtro{

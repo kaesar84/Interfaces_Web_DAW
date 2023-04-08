@@ -343,3 +343,16 @@ function filterImages(category) {
     }
   }
 }
+
+
+function clicado(button) {
+  // Desactivar cualquier otro botón que ya esté activo
+  var botones = document.getElementsByClassName('btn-filtro');
+  
+  for (var i = 0; i < botones.length; i++) {
+      botones[i].classList.remove('btn-filtro-click');
+      botones[i].classList.remove('btn-first');
+  }
+  // Activar el botón actual
+  button.classList.add('btn-filtro-click');
+}
