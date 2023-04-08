@@ -289,3 +289,23 @@ function desplegar(event) {
     } 
   }
 }
+
+
+
+/* Tooltip */
+const tooltips = document.getElementsByClassName('tooltip-container');
+
+for (let i = 0; i < tooltips.length; i++) {
+  const tooltipTrigger = tooltips[i].getElementsByClassName('tooltip-trigger')[0];
+  const tooltipText = tooltips[i].getElementsByClassName('tooltip-text')[0];
+
+  tooltipTrigger.addEventListener('mouseover', () => {
+    tooltipText.style.opacity = '1';
+    tooltipText.style.visibility = 'visible';
+  });
+
+  tooltipTrigger.addEventListener('mouseout', () => {
+    tooltipText.style.opacity = '0';
+    tooltipText.style.visibility = 'hidden';
+  });
+}
