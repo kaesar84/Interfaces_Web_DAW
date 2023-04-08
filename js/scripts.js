@@ -297,18 +297,18 @@ activarTooltip = () =>{
   // Lista de elementos clase tooltip-container
   var tooltips = document.getElementsByClassName('tooltip-container');
   //Lista de elementos clase tooltip-mostrar
-  var tooltipMostrar = tooltips[i].getElementsByClassName('tooltip-mostrar');
+  var tooltipMostrar = document.getElementsByClassName('tooltip-mostrar');
   //Lista de elementos clase tooltip-contenido
-  var tooltipContenido = tooltips[i].getElementsByClassName('tooltip-contenido');
+  var tooltipContenido = document.getElementsByClassName('tooltip-contenido');
 
   /*Recorremos los elementos que son de la clase tooltip-container y buscamos los elementos
    de clase tooltip-mostrar y tooltip-contenido y rellenamos nueva lista, se crea la 
    correspondencia a través de los indices, ya que son iguales:
    container[0] - mostrar[0] - contenido[0]*/
   for (let i = 0; i < tooltips.length; i++) {
-    var tooltipMostrarS = tooltips[i].getElementsByClassName('tooltip-mostrar');
+    var tooltipMostrarS = document.getElementsByClassName('tooltip-mostrar');
     console.log(tooltipMostrarS);
-    var tooltipContenidoS = tooltips[i].getElementsByClassName('tooltip-contenido');
+    var tooltipContenidoS = document.getElementsByClassName('tooltip-contenido');
   console.log(tooltipContenidoS);
 
   /*Establecemos listeners en cada elemento ya indexado, cuando el ratón este posicionado
