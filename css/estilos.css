@@ -858,7 +858,7 @@ input {
   position: relative;
 }
 
-.tooltip-text {
+.tooltip-contenido {
   position: absolute;
   top: 100%;
   left: 0;
@@ -873,7 +873,7 @@ input {
   font-size: 32px;
 }
 
-.tooltip-text::after {
+.tooltip-contenido::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -885,7 +885,7 @@ input {
   
 }
 
-.tooltip-trigger:hover + .tooltip-text {
+.tooltip-mostrar:hover + .tooltip-contenido {
   opacity: 1;
   visibility: visible;
 }
