@@ -256,7 +256,7 @@ section {
 .container-conocenos {
   min-width: 100%;
   min-height: 550px;
-  background-color: #242629;
+  /* background-color: #242629; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -292,7 +292,7 @@ section {
 .container-instalaciones {
   width: 100%;
   height: 980px;
-  background-color: #16161a;
+  /* background-color: #16161a; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,7 +402,7 @@ section {
 .container-actividades {
   width: 100%;
   height: 1180px;
-  background-color: #242629;
+  /* background-color: #242629; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,7 +543,7 @@ section {
 .container-activate {
   width: 100%;
   height: 950px;
-  background-color: #16161a;
+  /* background-color: #16161a; */
   display: flex;
   justify-content: center;
   align-items: center;
