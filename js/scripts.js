@@ -170,6 +170,7 @@ retroImg = () => {
 // ********************************************* //
 // PESTAÑAS
 // ********************************************* //
+//Aplica contenido en base a selección
 
 selectPest = (pestMostrar, pestClick) => {
   /*Creamos un array con los elementos de la clase contanier_actividades */
@@ -214,6 +215,7 @@ contactarAbrir = () => {
 
   var mensaje;
 
+  //valida contenido formulario
   (function formCheck() {
     if (!document.getElementById("formNombre").checkValidity()) {
       mensaje =
@@ -267,8 +269,11 @@ contactarCerrar = () => {
 };
 
 
+// ********************************************* //
+//ACORDEON
+// ********************************************* //
+//Desplegable de contenido
 
-/*Acordeon */
 function desplegar(event) {
   var activar = event.currentTarget;
   var acordeonBodyS = document.getElementsByClassName('acordeon-body');
@@ -292,7 +297,11 @@ function desplegar(event) {
 
 
 
-/* Tooltip */
+// ********************************************* //
+// TOOLTIP
+// ********************************************* //
+// Muestra tooltip al posicionar el mouse sobre elementos
+
 activarTooltip = () =>{
   // Lista de elementos clase tooltip-container
   var tooltips = document.getElementsByClassName('tooltip-container');
@@ -326,7 +335,10 @@ activarTooltip = () =>{
   }
 }
 
-
+// ********************************************* //
+// FILTRO
+// ********************************************* //
+// Aplica filtro por categorías, no duplica contenido
 
 function filterImages(category) {
   const imagenesFiltro = document.getElementsByClassName('imgfiltro');
@@ -344,7 +356,7 @@ function filterImages(category) {
   }
 }
 
-
+// aplica estilo a botones del filtro, determinando clases para estilo
 function clicado(button) {
   // Desactivar cualquier otro botón que ya esté activo
   var botones = document.getElementsByClassName('btn-filtro');

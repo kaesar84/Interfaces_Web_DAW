@@ -33,12 +33,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
-
 </head>
+
 
 <body>
   <header id="cabecera">
 
+    <!-- Fondos ImgeHero -->
     <div class="fondosHero" id="fondoHero1"></div>
     <div class="fondosHero" id="fondoHero2"></div>
     <div class="fondosHero" id="fondoHero3"></div>
@@ -55,7 +56,6 @@
               <li><a href="#filtro">ESTRELLAS</a></li>
             </ul>
           </li>
-
           <li><a href="#instalaciones">INSTALACIONES</a></li>
           <li><a href="#actividades">ACTIVIDADES</a>
             <ul class="lista-submenu">
@@ -75,6 +75,7 @@
     </div>
   </header>
 
+  <!-- INICIO conocenos -->
   <section id="conocenos" class="parallax-window" data-parallax="scroll"
     data-image-src="/media/imagenes/parallax/parallaxBack.png">
     <!-- Título de sección  Conócenos -->
@@ -110,12 +111,10 @@
         </p>
       </div>
     </div>
+    <!-- FIN conocenos -->
 
 
-
-    <!-- Equipo -->
-
-
+    <!-- INICIO Equipo -->
     <div id="team" class="container-titulo">
       <p class="titulo-seccion-claro">Equipo</p>
     </div>
@@ -123,10 +122,8 @@
     <div class="container-equipo parallax-window" data-parallax="scroll"
       data-image-src="/media/imagenes/parallax/parallaxBack.png">
 
-
       <div class="equipo">
         <div class="galeria-equipo">
-
 
           <div class="tooltip-container">
             <img src="/media/imagenes/equipo/Equipo1.jpg" alt="Entrenador1" class="equipoImg tooltip-mostrar">
@@ -158,43 +155,42 @@
       </div>
 
   </section>
+  <!-- FIN Equipo -->
 
-  <section id="filtro" class="parallax-window" data-parallax="scroll"
-  data-image-src="/media/imagenes/parallax/parallaxBack.png">
-  
+  <!-- INICIO Estrellas (filtro) -->
+  <section id="filtro">
+
     <div class="container-titulo">
       <p class="titulo-seccion-oscuro">NUESTRAS ESTRELLAS</p>
     </div>
 
-<div class="filtros">
-    <div class="container-btn-filtro">
-    <button class="btn-filtro btn-filtro-click" onclick="filterImages('todos'), clicado(this)" >Todos</button>
-    <button class="btn-filtro btn-filtro-click" onclick="filterImages('box'), clicado(this)">D. Contacto</button>
-    <button class="btn-filtro btn-filtro-click" onclick="filterImages('fut'), clicado(this)">Fútbol</button>
-    <button class="btn-filtro btn-filtro-click" onclick="filterImages('run'), clicado(this)">Atletas</button>
-    </div>
-    
-    
-    
-    <div class="galeria-filtro">
-      <img src="/media/imagenes/estrellas/estrella1.jpeg" class="imgfiltro fut">
-      <img src="/media/imagenes/estrellas/estrella2.png" class="imgfiltro fut">
-      <img src="/media/imagenes/estrellas/estrella3.jpg" class="imgfiltro box">
-      <img src="/media/imagenes/estrellas/estrella4.jpg" class="imgfiltro box">
-      <img src="/media/imagenes/estrellas/estrella5.jpg" class="imgfiltro run">
-      <img src="/media/imagenes/estrellas/estrella6.jpg" class="imgfiltro run">
-      
-    </div>
-  </div>
-    </section>
+    <div class="filtros">
+      <div class="container-btn-filtro">
+        <button class="btn-filtro btn-filtro-click" onclick="filterImages('todos'), clicado(this)">Todos</button>
+        <button class="btn-filtro btn-filtro-click" onclick="filterImages('box'), clicado(this)">D. Contacto</button>
+        <button class="btn-filtro btn-filtro-click" onclick="filterImages('fut'), clicado(this)">Fútbol</button>
+        <button class="btn-filtro btn-filtro-click" onclick="filterImages('run'), clicado(this)">Atletas</button>
+      </div>
 
+      <div class="galeria-filtro">
+        <img src="/media/imagenes/estrellas/estrella1.jpeg" class="imgfiltro fut">
+        <img src="/media/imagenes/estrellas/estrella2.png" class="imgfiltro fut">
+        <img src="/media/imagenes/estrellas/estrella3.jpg" class="imgfiltro box">
+        <img src="/media/imagenes/estrellas/estrella4.jpg" class="imgfiltro box">
+        <img src="/media/imagenes/estrellas/estrella5.jpg" class="imgfiltro run">
+        <img src="/media/imagenes/estrellas/estrella6.jpg" class="imgfiltro run">
+
+      </div>
+    </div>
+  </section>
+  <!-- FIN Estrellas (filtro) -->
+
+  <!-- INICIO Beneficios (acordeón) -->
   <div id="beneficios" class="container-titulo">
     <p class="titulo-seccion-claro">Beneficios de la práctica deportiva</p>
   </div>
 
-  <div class="container-acordeon parallax-window" data-parallax="scroll"
-    data-image-src="/media/imagenes/parallax/parallaxBack.png">
-
+  <div class="container-acordeon">
 
     <div class="acordeon">
       <div class="acordeon-header" onclick="desplegar(event)">Beneficios para la salud física</div>
@@ -221,11 +217,9 @@
     </div>
 
   </div>
+  <!-- FIN Beneficios (acordeón) -->
 
-
-
-
-
+  <!-- INICIO Instalaciones -->
   <section id="instalaciones" class="parallax-window" data-parallax="scroll"
     data-image-src="/media/imagenes/parallax/parallaxBack.png">
     <!-- Título de sección  Instalaciones -->
@@ -265,6 +259,7 @@
             src="/media/imagenes/instalaciones/Instalaciones12.jpg" alt="Ring boxeo"></div>
       </div>
 
+      <!-- LightBox -->
       <div id="modalLightBox">
 
         <button class="botonLB" onclick="retroImg()"><span class="material-symbols-outlined">
@@ -272,11 +267,9 @@
           </span></button>
 
         <div id="imagenMostradaContainer">
-          <div id="imagenMostrada">
-
-          </div>
-
+          <div id="imagenMostrada"></div>
         </div>
+
         <button class="botonLB" onclick="nextImg()"><span class="material-symbols-outlined">
             arrow_forward_ios
           </span></button>
@@ -284,7 +277,9 @@
       </div>
     </div>
   </section>
+  <!-- FIN Instalaciones -->
 
+  <!-- INICIO Actividades -->
   <section id="actividades" class="parallax-window" data-parallax="scroll"
     data-image-src="/media/imagenes/parallax/parallaxBack.png">
     <!-- Título de sección  Actividades -->
@@ -308,7 +303,7 @@
             onclick="selectPest('act_aquazone','paquazone')"> AQUAZONE</p>
         </div>
 
-        <!-- Galería de imágenes -->
+        <!-- Galería de imágenes act.Indoor-->
         <div class="container_actividades" id="act_indoor">
           <div class="actividades">
             <img src="/media/imagenes/actividades/indoor/Actividades1.jpg" alt="Ejerciio de flexibilidad">
@@ -348,6 +343,7 @@
           </div>
         </div>
 
+        <!-- Galería de imágenes act.Outdoor-->
         <div class="container_actividades" id="act_outdoor">
           <div class="actividades">
             <img src="/media/imagenes/actividades/outdoor/Actividades1.jpg" alt="Bicicleta de trial">
@@ -387,6 +383,7 @@
           </div>
         </div>
 
+        <!-- Galería de imágenes act.aquazone-->
         <div class="container_actividades" id="act_aquazone">
           <div class="actividades">
             <img src="/media/imagenes/actividades/aquazone/Actividades1.jpg" alt="FlyBoard">
@@ -430,8 +427,9 @@
     </div>
     </div>
   </section>
+  <!-- FIN Actividades -->
 
-
+  <!-- INICIO Activate -->
   <section id="activate" class="parallax-window" data-parallax="scroll"
     data-image-src="/media/imagenes/parallax/parallaxBack.png">
     <!-- Título de sección  Actívate -->
@@ -441,7 +439,7 @@
 
     <!-- Contenido sección Actívate -->
     <div class="container-activate parallax-window" data-parallax="scroll"
-    data-image-src="/media/imagenes/parallax/parallaxBack.png">
+      data-image-src="/media/imagenes/parallax/parallaxBack.png">
       <!-- Imagen localizacion -->
       <div class="fondo-activate" data-aos="zoom-out" data-aos-duration="1000">
         <div class="localizacion" data-aos="fade-right" data-aos-duration="1000">
@@ -486,13 +484,9 @@
       </div>
   </section>
 
+  <!-- FIN Activate -->
 
-
-
-
-
-
-  <!-- Pie de página  -->
+  <!-- INICIO Pie de página  -->
   <footer id="pie-pagina">
     <!-- Redes sociales  -->
     <div class="container-pie-pagina">
@@ -529,14 +523,11 @@
 
     </div>
   </footer>
-
-  <script>
-    AOS.init();
-
-  </script>
+  <!-- INICIO Pie de página  -->
 
   <script>
     //setInterval(heroSlideShow,3000);
+    AOS.init();
     setInterval(heroSlideShowAnim, 4000);
     comeToLight();
     activarTooltip();
